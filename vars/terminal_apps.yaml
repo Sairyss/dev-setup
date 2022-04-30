@@ -1,0 +1,23 @@
+---
+# App names available on Linux and MacOS
+
+terminal_apps:
+  - zsh # https://www.zsh.org/
+  - bat # https://github.com/sharkdp/bat
+  - exa # https://github.com/ogham/exa
+  - fd # https://github.com/sharkdp/fd
+  - fzf # https://github.com/junegunn/fzf
+  - curl # https://github.com/curl/curl
+  - fasd # https://github.com/clvv/fasd
+  - git # https://github.com/git/git
+  - ripgrep # https://github.com/BurntSushi/ripgrep
+  - tig # https://github.com/jonas/tig
+  - httpie # https://github.com/httpie/httpie
+  - tmux # https://github.com/tmux/tmux
+  - htop # https://github.com/htop-dev/htop
+  - xclip # https://github.com/astrand/xclip
+  - neovim # https://github.com/neovim/neovim
+  - ranger # https://github.com/ranger/ranger
+  - tree # http://mama.indstate.edu/users/ice/tree/
+  - tldr # https://github.com/tldr-pages/tldr
+  - jq # https://github.com/stedolan/jq

@@ -1,0 +1,18 @@
+---
+# App names specific to Arch linux and apps from AUR repository
+
+arch_apps:
+  - yay # https://github.com/Jguer/yay
+  - 'ttf-fira-code' # https://github.com/tonsky/FiraCode
+
+aur_gui_apps:
+  - 'albert-git' # https://github.com/albertlauncher/albert
+  - 'postman-bin' # https://www.postman.com
+  - opensnitch # https://github.com/evilsocket/opensnitch
+  - 'visual-studio-code-bin' # https://aur.archlinux.org/packages/visual-studio-code-bin
+  - 'slack-desktop' # http://aur.archlinux.org/packages/slack-desktop
+
+aur_terminal_apps:
+  - navi #https://github.com/denisidoro/navi
+  - yank # https://github.com/mptre/yank
+  - jid # https://github.com/simeji/jid

@@ -1,0 +1,4 @@
+---
+# App names specific to macOS brew
+brew_apps:
+  - 'font-fira-code' # https://github.com/tonsky/FiraCode

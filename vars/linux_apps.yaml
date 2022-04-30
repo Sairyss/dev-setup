@@ -1,0 +1,7 @@
+---
+# Apps only available on Linux
+linux_apps:
+  - guake # https://github.com/Guake/guake
+  - rofi # https://github.com/davatorium/rofi
+  - firejail # https://github.com/netblue30/firejail
+  - peek # https://github.com/phw/peek
