@@ -2,6 +2,8 @@
 
 My development setup. Includes dotfiles/configs, apps, tools, vscode extensions, neovim plugins, etc.
 
+![terminal-screenshot](screenshot.png)
+
 ## List of tools
 
 ### Terminal tools
