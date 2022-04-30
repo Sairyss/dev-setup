@@ -1,4 +1,4 @@
-# Dev Setup
+# Dev Tools
 
 My development setup. Includes dotfiles/configs, apps, tools, vscode extensions, neovim plugins, etc.
 

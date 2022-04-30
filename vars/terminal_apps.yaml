@@ -21,3 +21,5 @@ terminal_apps:
   - tree # http://mama.indstate.edu/users/ice/tree/
   - tldr # https://github.com/tldr-pages/tldr
   - jq # https://github.com/stedolan/jq
+  - docker # https://www.docker.com/
+  - docker-compose # https://docs.docker.com/compose/

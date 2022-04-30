@@ -1,3 +1,4 @@
+# Ansible playbook to install packages on Arch based distros
 - name: Install packages
   hosts: localhost
   when: ansible_facts['os_family'] == "Archlinux"
@@ -6,6 +7,7 @@
     - './vars/gui_apps.yaml'
     - './vars/arch_apps.yaml'
     - './vars/linux_apps.yaml'
+    - './vars/linux_services.yaml'
   tasks:
     - name: Upgrade, equivalent of "pacman -Syu"
       community.general.pacman:
@@ -30,6 +32,12 @@
       with_items:
         - '{{ aur_terminal_apps }}'
         - '{{ aur_gui_apps }}'
+
+    - name: Enable services
+      ansible.builtin.service:
+        name: '{{ item }}'
+        enabled: yes
+      with_items: '{{ linux_services }}'
 
     - name: Cleanup
       ansible.builtin.shell: ./scripts/arch-cleanup.sh

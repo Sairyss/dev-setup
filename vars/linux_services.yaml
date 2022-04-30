@@ -1,0 +1,6 @@
+---
+# Linux services that should be enabled
+
+linux_services:
+  - opensnitchd # https://github.com/evilsocket/opensnitch
+  - docker # https://www.docker.com/
