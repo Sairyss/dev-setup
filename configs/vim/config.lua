@@ -76,7 +76,7 @@ vim.cmd([[
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "onedarkpro"
+lvim.colorscheme = "onedarker"
 lvim.builtin.terminal.direction = 'horizontal'
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
