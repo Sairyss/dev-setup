@@ -50,6 +50,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [cheat.sh](https://github.com/chubin/cheat.sh) - cheat sheets in terminal
 - [tldr](https://github.com/tldr-pages/tldr) - community-maintained help pages
 - [navi](https://github.com/denisidoro/navi) - interactive cheatsheet tool for the command-line
+- [zk](https://github.com/mickael-menu/zk) - zettelkasten tool for creating notes and personal wiki
 
 #### Other terminal tools
 
@@ -90,23 +91,6 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [Fira Code](https://github.com/tonsky/FiraCode)
 - [Hack](https://github.com/source-foundry/Hack)
 
-### NeoVim Plugins
-
-- [LunarVim Core Plugins List](https://www.lunarvim.org/plugins/01-core-plugins-list.html) - plugins used in LunarVim
-- [Trouble](https://github.com/folke/trouble.nvim) - show errors in-line
-- [vim-prettier](https://github.com/prettier/vim-prettier) - prettier for vim
-- [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - multi-select in vim, similar to ctrl + d in vscode
-- [vim-fugitive](https://github.com/tpope/vim-fugitive) - vim git plugin
-- [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - rainbow parentheses
-- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim) - adds indentation guides to all lines
-- [coc.nvim](https://github.com/neoclide/coc.nvim) - snippets
-- [coc-spell-checker](https://github.com/iamcco/coc-spell-checker) - spell checker
-- [persistence](https://github.com/folke/persistence.nvim) - automated session management
-- [todo-comments](https://github.com/folke/todo-comments.nvim) - highlight todo comments
-- [rnvimr](https://github.com/kevinhwang91/rnvimr) - use ranger file manager in a floating window inside vim
-- [hop](https://github.com/phaazon/hop.nvim) - EasyMotion-like plugin allowing you to jump anywhere in a document with as few keystrokes as possible
-- [diffview](https://github.com/sindrets/diffview.nvim) - easily cycling through diffs for all modified files
-
 ### VSCode Extensions
 
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize settings
@@ -125,7 +109,25 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) — Git integration
 - [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes) - toggle quotes with a shortcut
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - colorize comments
-- [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity bar
+- [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity barFoam
+- [Foam](https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode) - zettelkasten note-taking tool
+
+### NeoVim Plugins
+
+- [LunarVim Core Plugins List](https://www.lunarvim.org/plugins/01-core-plugins-list.html) - plugins used in LunarVim
+- [Trouble](https://github.com/folke/trouble.nvim) - show errors in-line
+- [vim-prettier](https://github.com/prettier/vim-prettier) - prettier for vim
+- [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - multi-select in vim, similar to ctrl + d in vscode
+- [vim-fugitive](https://github.com/tpope/vim-fugitive) - vim git plugin
+- [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - rainbow parentheses
+- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim) - adds indentation guides to all lines
+- [coc.nvim](https://github.com/neoclide/coc.nvim) - snippets
+- [coc-spell-checker](https://github.com/iamcco/coc-spell-checker) - spell checker
+- [persistence](https://github.com/folke/persistence.nvim) - automated session management
+- [todo-comments](https://github.com/folke/todo-comments.nvim) - highlight todo comments
+- [rnvimr](https://github.com/kevinhwang91/rnvimr) - use ranger file manager in a floating window inside vim
+- [hop](https://github.com/phaazon/hop.nvim) - EasyMotion-like plugin allowing you to jump anywhere in a document with as few keystrokes as possible
+- [diffview](https://github.com/sindrets/diffview.nvim) - easily cycling through diffs for all modified files
 
 ### Other
 

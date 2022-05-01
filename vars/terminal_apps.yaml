@@ -23,3 +23,4 @@ terminal_apps:
   - jq # https://github.com/stedolan/jq
   - docker # https://www.docker.com/
   - docker-compose # https://docs.docker.com/compose/
+  - zk # https://github.com/mickael-menu/zk
