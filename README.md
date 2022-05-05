@@ -109,7 +109,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) — Git integration
 - [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes) - toggle quotes with a shortcut
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - colorize comments
-- [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity barFoam
+- [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity bar
 - [Foam](https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode) - zettelkasten note-taking tool
 
 ### NeoVim Plugins
