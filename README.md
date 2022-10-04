@@ -1,4 +1,4 @@
-# Dev Tools
+# Dev Setup
 
 My development setup. Includes dotfiles/configs, apps, tools, vscode extensions, neovim plugins, etc.
 
@@ -111,6 +111,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - colorize comments
 - [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity bar
 - [Foam](https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode) - zettelkasten note-taking tool
+- [DevToys](https://marketplace.visualstudio.com/items?itemName=kejun.devtoys) - useful tools for developers
 
 ### NeoVim Plugins
 
