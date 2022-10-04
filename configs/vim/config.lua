@@ -7,6 +7,7 @@ a global executable or a path to
 an executable
 ]]
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
+vim.opt.guifont = { "Fira Code Retina", ":h11" }
 
 -- Key bindings
 
@@ -33,28 +34,6 @@ vim.cmd([[
   nnoremap <silent> <F2> <Cmd> lua vim.lsp.buf.rename()<CR>
   nnoremap <silent> <C-d> <SNR>85_Visual('under')
   nnoremap <silent> <C-d> :<C-U>call vm#commands#ctrln(v:count1)<CR>
-  nnoremap x "_x
-  nnoremap <S-e> g_
-  nnoremap <C-e> g_
-  nnoremap <C-a> ^
-  nnoremap <S-b> ^
-  nnoremap <S-q> ^
-  nnoremap q b
-  nnoremap <S-r> <C-u>
-  nnoremap <S-f> <C-d>
-  nnoremap dq db
-  nnoremap yq yb
-  nnoremap dQ d^
-  nnoremap cQ c^
-  nnoremap vQ v^
-  nnoremap yQ y^
-  nnoremap cE c$
-  nnoremap dE d$
-  nnoremap vE v$
-  nnoremap vq vb
-  nnoremap n nzzzv
-  nnoremap N Nzzzv
-  nnoremap J mzJ`z
   nmap <Space>lc <Plug>(coc-fix-current)
   xmap <Space>lC <Plug>(coc-codeaction-selected)
   nmap <Space>lC <Plug>(coc-codeaction-selected)
@@ -66,9 +45,35 @@ vim.cmd([[
   nnoremap <silent> f :HopWord<CR>
   nnoremap <silent> <C-g> :HopLine<CR>
   nnoremap <silent> <M-/> :HopChar1<CR>
+  nnoremap s i
+  inoremap <a-s> <esc>
+  nnoremap x "_x
+  nnoremap q b
+  nnoremap R {zz
+  nnoremap F }zz
+  nnoremap q b
+  nnoremap E g_
+  nnoremap Q ^
+  nnoremap dq db
+  nnoremap cq cb
+  nnoremap yq yb
+  nnoremap dQ d^
+  nnoremap cQ c^
+  nnoremap yQ y^
+  nnoremap cE c$
+  nnoremap dE d$
+  vnoremap Q ^
+  vnoremap E $
+  vnoremap q b
+  nnoremap <a-a> vi
+  inoremap <a-a> <esc>vi
+  nnoremap n nzzzv
+  nnoremap N Nzzzv
+  nnoremap J mzJ`z
   inoremap , ,<c-g>u
   inoremap . .<c-g>u
   inoremap ! !<c-g>u
+  inoremap ; ;<c-g>u
 ]])
 -- vnoremap d "_d // dd no longer copies deleted item
 -- nnoremap d "_d

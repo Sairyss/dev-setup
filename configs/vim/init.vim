@@ -1,5 +1,7 @@
 let mapleader = "<space>"
 
+set guifont= "Fira Code Retina:h12"
+
 " Highlights yanked text
 augroup highlight_yank
   autocmd!
