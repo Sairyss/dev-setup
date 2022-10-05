@@ -42,9 +42,9 @@ vim.cmd([[
   nnoremap <silent> <Space>gD :DiffviewOpen<CR>
   nnoremap <silent> <Space>gF :DiffviewClose<CR>
   nnoremap <silent> <Space>gL :0Gclog<CR>
-  nnoremap <silent> f :HopWord<CR>
+  nnoremap <silent> <a-.> :HopWord<CR>
   nnoremap <silent> <C-g> :HopLine<CR>
-  nnoremap <silent> <M-/> :HopChar1<CR>
+  nnoremap <silent> <a-/> :HopChar1<CR>
   nnoremap s i
   inoremap <a-s> <esc>
   nnoremap x "_x
@@ -74,6 +74,10 @@ vim.cmd([[
   inoremap . .<c-g>u
   inoremap ! !<c-g>u
   inoremap ; ;<c-g>u
+if exists("g:neovide")
+" let g:neovide_cursor_animation_length=0.02
+" let g:neovide_cursor_trail_size=0.6
+endif
 ]])
 -- vnoremap d "_d // dd no longer copies deleted item
 -- nnoremap d "_d

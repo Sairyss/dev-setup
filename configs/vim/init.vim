@@ -67,8 +67,14 @@ inoremap ; ;<c-g>u
 vnoremap <M-j> :m '>+1<CR>gv=gv
 vnoremap <M-k> :m '<-2<CR>gv=gv
 
-" In VSCode use insert mode by default when entering buffer 
-" (with VSCode Neovim plugin)
+" VSCode Neovim plugin settings
 if exists('g:vscode')
+" In VSCode use insert mode by default when entering buffer 
   autocmd BufEnter * startinsert
+endif
+
+" Neovide settings
+if exists("g:neovide")
+  let g:neovide_cursor_animation_length=0.1
+  let g:neovide_cursor_trail_size=0.1
 endif

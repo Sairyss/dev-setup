@@ -53,9 +53,11 @@ alias tmux="TERM=screen-256color-bce tmux"
 # setup navi widget (ctrl + g). https://github.com/denisidoro/navi
 eval "$(navi widget zsh)"
 
+# zsh syntax highlighting
 [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# scm_breeze
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 # node version manager
