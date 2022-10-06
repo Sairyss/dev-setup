@@ -37,7 +37,7 @@ vim.cmd([[
   nmap <Space>lc <Plug>(coc-fix-current)
   xmap <Space>lC <Plug>(coc-codeaction-selected)
   nmap <Space>lC <Plug>(coc-codeaction-selected)
-  nnoremap <silent><nowait> <Space>e :RnvimrToggle<cr>
+  nnoremap <silent><nowait> <Space>r :RnvimrToggle<cr>
   nnoremap <silent><nowait> <Space>lD :<C-u>CocList diagnostics<cr>
   nnoremap <silent> <Space>gD :DiffviewOpen<CR>
   nnoremap <silent> <Space>gF :DiffviewClose<CR>
@@ -127,7 +127,8 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-lvim.builtin.dashboard.active = true
+-- lvim.builtin.dashboard.active = true
+lvim.builtin.alpha.actuve = true
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.dap.active = true
@@ -184,152 +185,152 @@ vim.cmd [[highlight IndentBlanklineIndent2 guibg=#1a1a1a gui=nocombine]]
 -- end
 
 -- -- set a formatter, this will override the language server formatting capabilities (if it exists)
- local formatters = require "lvim.lsp.null-ls.formatters"
- formatters.setup {
---   { command = "black", filetypes = { "python" } },
---   { command = "isort", filetypes = { "python" } },
-   {
-     -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
-     command = "prettier",
-     ---@usage arguments to pass to the formatter
-     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
---     extra_args = { "--print-with", "100" },
-     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
---     filetypes = { "typescript", "typescriptreact" },
-   },
- }
+local formatters = require "lvim.lsp.null-ls.formatters"
+formatters.setup {
+  --   { command = "black", filetypes = { "python" } },
+  --   { command = "isort", filetypes = { "python" } },
+  {
+    -- each formatter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
+    command = "prettier",
+    ---@usage arguments to pass to the formatter
+    -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
+    --     extra_args = { "--print-with", "100" },
+    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+    --     filetypes = { "typescript", "typescriptreact" },
+  },
+}
 
 -- -- set additional linters
- local linters = require "lvim.lsp.null-ls.linters"
- linters.setup {
---   { command = "flake8", filetypes = { "python" } },
-     {
---     -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
-     command = "shellcheck",
---     ---@usage arguments to pass to the formatter
---     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
---     extra_args = { "--severity", "warning" },
-     },
-    {
-      command = "eslint_d",
-      ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-      -- filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-    },
+local linters = require "lvim.lsp.null-ls.linters"
+linters.setup {
+  --   { command = "flake8", filetypes = { "python" } },
+  {
+    --     -- each linter accepts a list of options identical to https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md#Configuration
+    command = "shellcheck",
+    --     ---@usage arguments to pass to the formatter
+    --     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
+    --     extra_args = { "--severity", "warning" },
+  },
+  {
+    command = "eslint_d",
+    ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+    -- filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+  },
   --   {
---     command = "codespell",
---     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
---     filetypes = { "javascript", "python" },
---   },
- }
+  --     command = "codespell",
+  --     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
+  --     filetypes = { "javascript", "python" },
+  --   },
+}
 
 -- Additional Plugins
 lvim.plugins = {
-     {"folke/tokyonight.nvim"},
-     {
-       "folke/trouble.nvim",
-       cmd = "TroubleFoggle",
-     },
-    {"Th3Whit3Wolf/one-nvim"},
-    {"marko-cerovac/material.nvim"},
-    {"rafamadriz/neon"},
-    {"olimorris/onedarkpro.nvim"},
-    {"prettier/vim-prettier"},
-    {"mg979/vim-visual-multi"},
-    {"tpope/vim-fugitive"},
-    {"p00f/nvim-ts-rainbow"},
-    {"lukas-reineke/indent-blankline.nvim",
-      config = function()
-       require("indent_blankline").setup {
-          space_char_blankline = " ",
-          show_current_context = true,
-          show_current_context_start = true,
+  { "folke/tokyonight.nvim" },
+  {
+    "folke/trouble.nvim",
+    cmd = "TroubleFoggle",
+  },
+  { "Th3Whit3Wolf/one-nvim" },
+  { "marko-cerovac/material.nvim" },
+  { "rafamadriz/neon" },
+  { "olimorris/onedarkpro.nvim" },
+  { "prettier/vim-prettier" },
+  { "mg979/vim-visual-multi" },
+  { "tpope/vim-fugitive" },
+  { "p00f/nvim-ts-rainbow" },
+  { "lukas-reineke/indent-blankline.nvim",
+    config = function()
+      require("indent_blankline").setup {
+        space_char_blankline = " ",
+        show_current_context = true,
+        show_current_context_start = true,
       }
     end,
-    },
-    {"neoclide/coc.nvim", run = "yarn install --frozen-lockfile"},
-    {"iamcco/coc-spell-checker" },
-    {
-      'wfxr/minimap.vim',
-      run = "cargo install --locked code-minimap",
-      -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
-      config = function ()
-        vim.cmd ("let g:minimap_width = 10")
-        vim.cmd ("let g:minimap_auto_start = 1")
-        vim.cmd ("let g:minimap_auto_start_win_enter = 1")
-      end,
-    },
-    {
-      "sindrets/diffview.nvim",
-      event = "BufRead",
-    },
-    {
-      "folke/persistence.nvim",
-        event = "BufReadPre", -- this will only start session saving when an actual file was opened
-        module = "persistence",
-        config = function()
-          require("persistence").setup {
-            dir = vim.fn.expand(vim.fn.stdpath "config" .. "/session/"),
-            options = { "buffers", "curdir", "tabpages", "winsize" },
-          }
-      end,
-    },
-    {
-      "folke/todo-comments.nvim",
-      event = "BufRead",
-      config = function()
-        require("todo-comments").setup()
-      end,
-    },
-    {
-      "kevinhwang91/rnvimr",
-        cmd = "RnvimrToggle",
-        config = function()
-          vim.g.rnvimr_draw_border = 1
-          vim.g.rnvimr_pick_enable = 1
-          vim.g.rnvimr_bw_enable = 1
-          end,
-    },
-    {
-      "phaazon/hop.nvim",
-      event = "BufRead",
-      config = function()
-        require("hop").setup()
-      end,
-    },
-    {
+  },
+  { "neoclide/coc.nvim", run = "yarn install --frozen-lockfile" },
+  { "iamcco/coc-spell-checker" },
+  {
+    'wfxr/minimap.vim',
+    run = "cargo install --locked code-minimap",
+    -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
+    config = function()
+      vim.cmd("let g:minimap_width = 10")
+      vim.cmd("let g:minimap_auto_start = 1")
+      vim.cmd("let g:minimap_auto_start_win_enter = 1")
+    end,
+  },
+  {
+    "sindrets/diffview.nvim",
+    event = "BufRead",
+  },
+  {
+    "folke/persistence.nvim",
+    event = "BufReadPre", -- this will only start session saving when an actual file was opened
+    module = "persistence",
+    config = function()
+      require("persistence").setup {
+        dir = vim.fn.expand(vim.fn.stdpath "config" .. "/session/"),
+        options = { "buffers", "curdir", "tabpages", "winsize" },
+      }
+    end,
+  },
+  {
+    "folke/todo-comments.nvim",
+    event = "BufRead",
+    config = function()
+      require("todo-comments").setup()
+    end,
+  },
+  {
+    "kevinhwang91/rnvimr",
+    cmd = "RnvimrToggle",
+    config = function()
+      vim.g.rnvimr_draw_border = 1
+      vim.g.rnvimr_pick_enable = 1
+      vim.g.rnvimr_bw_enable = 1
+    end,
+  },
+  {
+    "phaazon/hop.nvim",
+    event = "BufRead",
+    config = function()
+      require("hop").setup()
+    end,
+  },
+  {
     "mickael-menu/zk-nvim",
     config = function()
       require("zk").setup({
-  -- can be "telescope", "fzf" or "select" (`vim.ui.select`)
-  -- it's recommended to use "telescope" or "fzf"
-      picker = "telescope",
+        -- can be "telescope", "fzf" or "select" (`vim.ui.select`)
+        -- it's recommended to use "telescope" or "fzf"
+        picker = "telescope",
 
-      lsp = {
-    -- `config` is passed to `vim.lsp.start_client(config)`
-        config = {
-          cmd = { "zk", "lsp" },
-          name = "zk",
-      -- on_attach = ...
-      -- etc, see `:h vim.lsp.start_client()`
-    },
+        lsp = {
+          -- `config` is passed to `vim.lsp.start_client(config)`
+          config = {
+            cmd = { "zk", "lsp" },
+            name = "zk",
+            -- on_attach = ...
+            -- etc, see `:h vim.lsp.start_client()`
+          },
 
-    -- automatically attach buffers in a zk notebook that match the given filetypes
-      auto_attach = {
-        enabled = true,
-        filetypes = { "markdown" },
-    },
-  },
-})
+          -- automatically attach buffers in a zk notebook that match the given filetypes
+          auto_attach = {
+            enabled = true,
+            filetypes = { "markdown" },
+          },
+        },
+      })
     end,
-    }
- }
-
-  lvim.builtin.which_key.mappings["S"]= {
-    name = "Session",
-    S = { "<cmd>lua require('persistence').load()<cr>", "Restore last session for current dir" },
-    l = { "<cmd>lua require('persistence').load({ last = true })<cr>", "Restore last session" },
-    Q = { "<cmd>lua require('persistence').stop()<cr>", "Quit without saving session" },
   }
+}
+
+lvim.builtin.which_key.mappings["S"] = {
+  name = "Session",
+  S = { "<cmd>lua require('persistence').load()<cr>", "Restore last session for current dir" },
+  l = { "<cmd>lua require('persistence').load({ last = true })<cr>", "Restore last session" },
+  Q = { "<cmd>lua require('persistence').stop()<cr>", "Quit without saving session" },
+}
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {
 --   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },

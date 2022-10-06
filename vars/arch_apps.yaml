@@ -4,6 +4,7 @@
 arch_apps:
   - yay # https://github.com/Jguer/yay
   - 'ttf-fira-code' # https://github.com/tonsky/FiraCode
+  - 'nerd-fonts-fira-code'
 
 aur_gui_apps:
   - 'albert-git' # https://github.com/albertlauncher/albert
@@ -15,4 +16,3 @@ aur_gui_apps:
 aur_terminal_apps:
   - navi #https://github.com/denisidoro/navi
   - yank # https://github.com/mptre/yank
-  - jid # https://github.com/simeji/jid

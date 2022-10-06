@@ -1,7 +1,7 @@
 # Ansible playbook to install packages on Arch based distros
 - name: Install packages
   hosts: localhost
-  when: ansible_facts['os_family'] == "Archlinux"
+  #when: ansible_facts['os_family'] == "Archlinux"
   vars_files:
     - './vars/terminal_apps.yaml'
     - './vars/gui_apps.yaml'

@@ -8,6 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 
 export BAT_THEME="TwoDark"
 
+ZSH_THEME="robbyrussell"
+
 plugins=(docker docker-compose fasd tmux zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
