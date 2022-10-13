@@ -4,6 +4,9 @@ zstyle -e ':completion:*:hosts' hosts 'reply=(
   ${=${${${${(@M)${(f)"$(cat ~/.ssh/config 2>/dev/null)"}:#Host *}#Host }:#*\**}:#*\?*}}
 )'
 
+export EDITOR=~/.local/bin/lvim
+export VISUAL=~/.local/bin/lv
+
 export ZSH="$HOME/.oh-my-zsh"
 
 export BAT_THEME="TwoDark"

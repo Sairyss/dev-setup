@@ -44,6 +44,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 
 - [neovim](https://github.com/neovim/neovim) - terminal text editor
 - [LunarVim](https://github.com/LunarVim/LunarVim) - neovim with plugins for development
+- [Neovide](https://github.com/neovide/neovide) - GUI for Neovim
 
 #### Documentation
 
@@ -56,6 +57,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 
 - [tmux](https://github.com/tmux/tmux) - terminal multiplexer
 - [.tmux](https://github.com/gpakosz/.tmux) - tmux config
+- [zellij](https://github.com/zellij-org/zellij) - modern tmux replacement
 - [htop](https://github.com/htop-dev/htop) - interactive process viewer
 - [xclip](https://github.com/astrand/xclip) - cli clipboard
 - [yank](https://github.com/mptre/yank) - copy terminal output to clipboard
@@ -74,6 +76,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 #### For Linux
 
 - [guake](https://github.com/Guake/guake) - terminal emulator
+- [alacritty](https://github.com/alacritty/alacritty) - terminal emulator
 - [Albert](https://github.com/albertlauncher/albert) - launcher fox linux
 - [Opensnitch](https://github.com/evilsocket/opensnitch) - linux application firewall
 - [rofi](https://github.com/davatorium/rofi) - launcher

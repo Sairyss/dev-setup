@@ -11,3 +11,5 @@ bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/
   mv ~/.config/lvim/config.lua ~/.config/lvim/config.lua.backup &&
   ln -s $CURRENT_DIR/config.lua ~/.config/lvim/config.lua
 echo "[VIM] done"
+
+ln -s $CURRENT_DIR/lv ~/.local/bin

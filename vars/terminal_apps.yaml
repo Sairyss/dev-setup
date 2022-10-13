@@ -24,3 +24,5 @@ terminal_apps:
   - docker # https://www.docker.com/
   - docker-compose # https://docs.docker.com/compose/
   - zk # https://github.com/mickael-menu/zk
+  - xdotool # https://github.com/jordansissel/xdotool
+  - alacritty # https://github.com/alacritty/alacritty

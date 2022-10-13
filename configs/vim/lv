@@ -1,0 +1,3 @@
+#!/bin/sh
+
+neovide --maximized --multigrid --neovim-bin ~/.local/bin/lvim "$@"
