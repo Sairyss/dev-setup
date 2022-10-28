@@ -14,6 +14,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) - zsh config with bells and whistles
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - syntax highlighting for zsh
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) - autosuggestions for zsh
+- [starship](https://starship.rs/) - shell prompt
 
 #### Files
 

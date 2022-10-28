@@ -13,7 +13,7 @@ export BAT_THEME="TwoDark"
 
 ZSH_THEME="robbyrussell"
 
-plugins=(docker docker-compose fasd tmux zsh-autosuggestions)
+plugins=(docker docker-compose fasd tmux zsh-autosuggestions vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,3 +70,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 eval "$(fasd --init auto)"
+
+# enable vi mode
+bindkey -v
+# vi mode plugin settings
+VI_MODE_SET_CURSOR=true
+# fixing Alt+. in zsh vi mode
+bindkey -M viins '\e.' insert-last-word

@@ -42,15 +42,15 @@ vim.cmd([[
   nnoremap <silent> <Space>gD :DiffviewOpen<CR>
   nnoremap <silent> <Space>gF :DiffviewClose<CR>
   nnoremap <silent> <Space>gL :0Gclog<CR>
-  nnoremap <silent> <a-.> :HopWord<CR>
+  nnoremap <silent> <a-,> :HopWord<CR>
   nnoremap <silent> <C-g> :HopLine<CR>
   nnoremap <silent> <a-/> :HopChar1<CR>
   nnoremap s i
   inoremap <a-s> <esc>
   nnoremap x "_x
   nnoremap q b
-  nnoremap R {zz
-  nnoremap F }zz
+  nnoremap { {zz
+  nnoremap } }zz
   nnoremap q b
   nnoremap E g_
   nnoremap Q ^
@@ -64,6 +64,14 @@ vim.cmd([[
   nnoremap dE d$
   vnoremap Q ^
   vnoremap E $
+  nnoremap h i
+  nnoremap k j
+  nnoremap j h
+  nnoremap i k
+  vnoremap h i
+  vnoremap k j
+  vnoremap j h
+  vnoremap i k
   vnoremap q b
   nnoremap <a-a> vi
   inoremap <a-a> <esc>vi

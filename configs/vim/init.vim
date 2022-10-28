@@ -8,8 +8,12 @@ augroup highlight_yank
   au TextYankPost * silent! lua vim.highlight.on_yank{higroup='IncSearch', timeout=200}
 augroup END
 
+" Toggle between insert/normal modes with ESC
+nnoremap <Esc> i
+
 " Use 's' to enter insert mode ('i' still can be used)
 nnoremap s i
+
 " Use 'alt+s' to enter normal mode
 inoremap <a-s> <esc>
 
@@ -36,12 +40,23 @@ vnoremap Q ^
 vnoremap E $
 vnoremap q b
 
+" Navigating using ijkl instead of hjkl
+" since its similar to wasd and arrow keys
+nnoremap h i
+nnoremap k j
+nnoremap j h
+nnoremap i k
+vnoremap h i
+vnoremap k j
+vnoremap j h
+vnoremap i k
+
 " Navigating to the start of the line using B since ^ is hard to reach
 nnoremap B ^
 
-" Navigating one paragraph up and down using R and F
-nnoremap R {zz
-nnoremap F }zz
+" Centering screen view when moving
+nnoremap { {zz
+nnoremap } }zz
 
 " Yank everything to the end of the line (excluding newline)
 " noremap Y y$
@@ -63,14 +78,14 @@ inoremap . .<c-g>u
 inoremap ! !<c-g>u
 inoremap ; ;<c-g>u
 
-" Move selected text line up and down using alt + j-k
+" Move selected text line up and down using alt + j/k
 vnoremap <M-j> :m '>+1<CR>gv=gv
 vnoremap <M-k> :m '<-2<CR>gv=gv
 
 " VSCode Neovim plugin settings
 if exists('g:vscode')
 " In VSCode use insert mode by default when entering buffer 
-  autocmd BufEnter * startinsert
+  " autocmd BufEnter * startinsert
 endif
 
 " Neovide settings
