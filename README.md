@@ -116,6 +116,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity bar
 - [Foam](https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode) - zettelkasten note-taking tool
 - [DevToys](https://marketplace.visualstudio.com/items?itemName=kejun.devtoys) - useful tools for developers
+- [TabOut](https://marketplace.visualstudio.com/items?itemName=albert.TabOut) - Tab out of quotes, brackets, etc
 
 ### NeoVim Plugins
 
@@ -133,6 +134,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [rnvimr](https://github.com/kevinhwang91/rnvimr) - use ranger file manager in a floating window inside vim
 - [hop](https://github.com/phaazon/hop.nvim) - EasyMotion-like plugin allowing you to jump anywhere in a document with as few keystrokes as possible
 - [diffview](https://github.com/sindrets/diffview.nvim) - easily cycling through diffs for all modified files
+- [tabout.nvim](https://github.com/abecodes/tabout.nvim) - tabbing out from parentheses, quotes, and similar contexts
 
 ### Other
 
