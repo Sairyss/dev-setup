@@ -1,5 +1,3 @@
-let mapleader = "<space>"
-
 set guifont= "Fira Code Retina:h12"
 
 " Highlights yanked text
@@ -42,14 +40,14 @@ vnoremap q b
 
 " Navigating using ijkl instead of hjkl
 " since its similar to wasd and arrow keys
-nnoremap h i
-nnoremap k j
-nnoremap j h
-nnoremap i k
-vnoremap h i
-vnoremap k j
-vnoremap j h
-vnoremap i k
+" nnoremap h i
+" nnoremap k j
+" nnoremap j h
+" nnoremap i k
+" vnoremap h i
+" vnoremap k j
+" vnoremap j h
+" vnoremap i k
 
 " Navigating to the start of the line using B since ^ is hard to reach
 nnoremap B ^
@@ -82,14 +80,14 @@ inoremap ; ;<c-g>u
 vnoremap <M-j> :m '>+1<CR>gv=gv
 vnoremap <M-k> :m '<-2<CR>gv=gv
 
-" VSCode Neovim plugin settings
-if exists('g:vscode')
-" In VSCode use insert mode by default when entering buffer 
-  " autocmd BufEnter * startinsert
-endif
-
 " Neovide settings
 if exists("g:neovide")
   let g:neovide_cursor_animation_length=0.1
   let g:neovide_cursor_trail_size=0.1
 endif
+
+" VSCode Neovim plugin settings
+" if exists('g:vscode')
+" In VSCode use insert mode by default when entering buffer 
+  " autocmd BufEnter * startinsert
+" endif
