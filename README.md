@@ -100,6 +100,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize settings
 - [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim) - neovim navigation in vscode
 - [MetaJump](https://marketplace.visualstudio.com/items?itemName=metaseed.MetaJump) - fast cursor moving using only keyboard
+- [Jumpy2](https://marketplace.visualstudio.com/items?itemName=DavidLGoldberg.jumpy2) - jump around using keyboard (alternative to MetaJump)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - spell checker
 - [LTeX](https://marketplace.visualstudio.com/items?itemName=valentjn.vscode-ltex) – LanguageTool grammar/spell checking
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) - enables you to collaboratively edit and debug with others in real time
@@ -113,10 +114,11 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) — Git integration
 - [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes) - toggle quotes with a shortcut
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) - colorize comments
-- [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity bar
+- [TabOut](https://marketplace.visualstudio.com/items?itemName=albert.TabOut) - tabbing out from parentheses, quotes, and similar contexts
 - [Foam](https://marketplace.visualstudio.com/items?itemName=foam.foam-vscode) - zettelkasten note-taking tool
 - [DevToys](https://marketplace.visualstudio.com/items?itemName=kejun.devtoys) - useful tools for developers
-- [TabOut](https://marketplace.visualstudio.com/items?itemName=albert.TabOut) - Tab out of quotes, brackets, etc
+- [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity bar
+- [Customize UI](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) - Advanced VSCode user interface customizations. Can be used as alternative to "Activitus Bar" above.
 
 ### NeoVim Plugins
 
