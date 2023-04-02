@@ -77,3 +77,4 @@ bindkey -v
 VI_MODE_SET_CURSOR=true
 # fixing Alt+. in zsh vi mode
 bindkey -M viins '\e.' insert-last-word
+bindkey '^[^?' backward-kill-word
