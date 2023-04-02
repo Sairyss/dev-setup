@@ -22,7 +22,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [bat](https://github.com/sharkdp/bat) - same as `cat` but with syntax highlighting
 - [exa](https://github.com/ogham/exa) - same as `ls` but with syntax highlighting
 - [fasd](https://github.com/clvv/fasd) - quick access to files and directories
-- [tree](http://mama.indstate.edu/users/ice/tree/) - recursive directory listing command
+- [erdtree](https://github.com/solidiquis/erdtree) - better tree
 
 #### Git
 
