@@ -23,6 +23,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [exa](https://github.com/ogham/exa) - same as `ls` but with syntax highlighting
 - [fasd](https://github.com/clvv/fasd) - quick access to files and directories
 - [erdtree](https://github.com/solidiquis/erdtree) - better tree
+- [broot](https://github.com/Canop/broot) - a better way to navigate directories
 
 #### Git
 
@@ -41,12 +42,6 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [curl](https://github.com/curl/curl) - command-line tool for transferring data specified with URL syntax
 - [httpie](https://github.com/httpie/httpie) - command-line HTTP client
 
-#### Text editors
-
-- [neovim](https://github.com/neovim/neovim) - terminal text editor
-- [LunarVim](https://github.com/LunarVim/LunarVim) - neovim with plugins for development
-- [Neovide](https://github.com/neovide/neovide) - GUI for Neovim
-
 #### Documentation
 
 - [cheat.sh](https://github.com/chubin/cheat.sh) - cheat sheets in terminal
@@ -64,6 +59,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [yank](https://github.com/mptre/yank) - copy terminal output to clipboard
 - [jq](https://github.com/stedolan/jq) - command-line JSON processor
 - [jid](https://github.com/simeji/jid) - Json Incremental Digger
+- [mprocs](https://github.com/pvolok/mprocs) - runs multiple commands in parallel and shows output of each command separately
 
 ### GUI Tools
 
@@ -122,21 +118,21 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 
 ### NeoVim Plugins
 
-- [LunarVim Core Plugins List](https://www.lunarvim.org/plugins/01-core-plugins-list.html) - plugins used in LunarVim
-- [Trouble](https://github.com/folke/trouble.nvim) - show errors in-line
-- [vim-prettier](https://github.com/prettier/vim-prettier) - prettier for vim
+- [LazyVim](https://github.com/LazyVim/LazyVim) - neovim setup to make it feel like an IDE
 - [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - multi-select in vim, similar to ctrl + d in vscode
 - [vim-fugitive](https://github.com/tpope/vim-fugitive) - vim git plugin
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - rainbow parentheses
-- [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim) - adds indentation guides to all lines
-- [coc.nvim](https://github.com/neoclide/coc.nvim) - snippets
-- [coc-spell-checker](https://github.com/iamcco/coc-spell-checker) - spell checker
-- [persistence](https://github.com/folke/persistence.nvim) - automated session management
-- [todo-comments](https://github.com/folke/todo-comments.nvim) - highlight todo comments
 - [rnvimr](https://github.com/kevinhwang91/rnvimr) - use ranger file manager in a floating window inside vim
 - [hop](https://github.com/phaazon/hop.nvim) - EasyMotion-like plugin allowing you to jump anywhere in a document with as few keystrokes as possible
+- [flash.nvim](https://github.com/folke/flash.nvim) - navigate your code with search labels, enhanced character motions, and Treesitter integration
 - [diffview](https://github.com/sindrets/diffview.nvim) - easily cycling through diffs for all modified files
 - [tabout.nvim](https://github.com/abecodes/tabout.nvim) - tabbing out from parentheses, quotes, and similar contexts
+- [aerial.nvim](https://github.com/stevearc/aerial.nvim) - a code outline window for skimming and quick navigation
+- [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar) - extensible neovim scrollbar
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - autopair plugin
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - use treesitter to autoclose and autorename html tag
+- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) - toggle terminals in neovim
+- [Neovide](https://github.com/neovide/neovide) - GUI for Neovim
 
 ### Other
 
