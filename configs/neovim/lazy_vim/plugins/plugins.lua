@@ -89,7 +89,17 @@ return {
       require("aerial").setup({
         open_automatic = true,
         attach_mode = "global",
+        layout = {
+          max_width = { 40, 0.2 },
+          min_width = 30,
+        },
       })
     end,
+  },
+  {
+    "nvim-lua/plenary.nvim",
+  },
+  {
+    "ThePrimeagen/harpoon",
   },
 }
