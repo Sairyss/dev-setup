@@ -120,6 +120,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 
 - [LazyVim](https://github.com/LazyVim/LazyVim) - neovim setup to make it feel like an IDE
 - [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - multi-select in vim, similar to ctrl + d in vscode
+- [harpoon](https://github.com/ThePrimeagen/harpoon) - mark buffers on the fly and switch between them with hotkeys
 - [vim-fugitive](https://github.com/tpope/vim-fugitive) - vim git plugin
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - rainbow parentheses
 - [rnvimr](https://github.com/kevinhwang91/rnvimr) - use ranger file manager in a floating window inside vim
