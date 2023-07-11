@@ -41,6 +41,7 @@ return {
         "regex",
         "query",
         "sql",
+        "prisma",
       })
     end,
   },
@@ -87,7 +88,7 @@ return {
     },
     config = function()
       require("aerial").setup({
-        open_automatic = true,
+        -- open_automatic = true,
         attach_mode = "global",
         layout = {
           max_width = { 40, 0.2 },
@@ -102,4 +103,8 @@ return {
   {
     "ThePrimeagen/harpoon",
   },
+  { "CRAG666/code_runner.nvim", config = true },
+
+  --  Disable plugins
+  { "mini.animate", enabled = false },
 }
