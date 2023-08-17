@@ -30,6 +30,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [git](https://github.com/git/git) - version control tool
 - [tig](https://github.com/jonas/tig) - text-mode interface for git
 - [scm_breeze](https://github.com/scmbreeze/scm_breeze) - a set of shell scripts that enhance your interaction with git
+- [lazygit](https://github.com/kdheepak/lazygit.nvim) - git in terminal
 
 #### Search
 
