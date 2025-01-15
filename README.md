@@ -144,11 +144,11 @@ To see full list of Neovim plugins, check out [plugins.lua](./.config/nvim/lua/p
 - [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity bar
 - [Customize UI](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) - Advanced VSCode user interface customizations. Can be used as alternative to "Activitus Bar" above.
 
-### Other
+## Misc
 
 - [hosts](https://github.com/StevenBlack/hosts) - hosts file to block malicious sites, trackers, ads, etc.
 
-## Sync configs
+### Sync configs
 
 To backup and restore configs, store your configs in github and use Stow to create symbolic links.
 <https://www.gnu.org/software/stow/manual/stow.html>
@@ -157,13 +157,13 @@ To backup and restore configs, store your configs in github and use Stow to crea
 
 - Put `.dotfiles` to home directory and execute `stow . --ignore='README.md'` from inside it.
 
-## Sync apps
+### Sync apps
 
 To automatically install apps use Aconfmgr <https://github.com/CyberShadow/aconfmgr> (Arch Linux only).
 
 - `aconfmgr save`
 - `aconfmgr apply`
 
-## Docs
+### Docs
 
 - <https://wiki.archlinux.org/title/Dotfiles>
