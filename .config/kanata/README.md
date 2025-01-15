@@ -38,11 +38,21 @@ For full list check the config: [kanata.kdb](./kanata.kbd)
 
 ### Leader layer
 
-`<leader>` key is mapped to `j+k` chord at the time of writing.
-Pressing `<leader>` key takes you to the leader layer.
+`<leader>` key is mapped to `j+k` chord to toggle the layer (press `esc` to exit),
+or is toggled while holding `return`/`enter` key (I use a split keyboard so this key
+is on my right thumb, you'll have to change it to your liking).
+
+Pressing/holding key assigned to `<leader>` takes you to the leader layer.
 This layer allows you to execute certain actions or move to
 other layers (same as Vim).
-Press `esc` or `'` to exit from any layer.
+
+- `<leader>w` - enter window layer
+- `<leader>n` - enter normal mode layer
+- `<leader>r` - runs launcher ([rofi](https://github.com/lbonn/rofi) in my case)
+- `<leader>q` - opens email client
+- and so on. I have all of my most frequently used apps in leader layer.
+
+Pressing `esc` or `'` exits from any layer.
 
 ### Window layer
 
@@ -96,31 +106,19 @@ Instead of holding `ctrl` with my pinky, I hold `f` with my index finger, which 
 
 You can map any layer to any key this way.
 
-### Apps layer
-
-I also launch apps or switch focus to app windows using this approach.
-For example, pressing `<apps>` key (similar to `<leader>` key in vim, you can map it to any key combination.
-In my case it's `m+,` or `<leader>a`) puts me into the apps layer, so I can run any app from it.
-For example, `<apps>r` can run an app launcher like [rofi](https://github.com/lbonn/rofi),
-and `<apps>t` can run (or switch focus to) a terminal.
-
-For this to work you have 2 options:
-
-- Map your apps to any shortcuts in your DE (in my case it's `meta+(1-4)` and `meta+(q-r)` for apps, `meta+esc` for terminal, and `ctrl+space` for launcher). After that you can map those shortcuts to whatever layers you want with Kanata.
-- Alternatively you can run binaries directly with Kanata [cmd](https://github.com/jtroo/kanata/blob/main/docs/config.adoc#cmd) feature, but it's a bit harder to setup and is generally not recommended.
-
 ### Input Chords
 
-For most frequent apps/actions it's faster to just press `key1+key2` than going to a layer.
+For some most frequent apps/actions it might be faster to just press `key1+key2` than going to a layer.
 For these I use [Input chords](https://github.com/jtroo/kanata/blob/v1.7.0/docs/config.adoc#input-chords--combos-v2). This allows executing actions by pressing any two (or more) keys at the same time.
-For example you can press `1+2`, `1+2+3`, or `a+b`, etc. I use it to switch between specific windows:
+For example you can press `1+2`, `1+2+3`, or `a+b`, etc. I use it to switch between specific windows or layers:
 
 - `d+f` focuses my terminal that runs Neovim
 - `c+v` focuses my regular terminal
 - `f+g` focuses Firefox
-- and so on.
+- `j+k` enters leader layer
+- etc.
 
-It's much more convenient than `meta+key` combinations that I previously used for this.
+It's more convenient than `mod+key` combinations that I previously used for this.
 
 ## Apps and plugins
 
@@ -132,6 +130,13 @@ Below are some apps and plugins that support vim motions.
 - [kanata-tray](https://github.com/rszyma/kanata-tray) - kanata tray icon (can show custom icons on layer change)
 
 ## Other
+
+### Launching/focusing apps from kanata
+
+For this to work you have 2 options:
+
+- Map your apps to any shortcuts in your DE (in my case it's `meta+(1-4)` and `meta+(q-r)` for apps, `meta+esc` for terminal, and `ctrl+space` for launcher). After that you can map those shortcuts to whatever layers you want with Kanata.
+- Alternatively you can run binaries directly with Kanata [cmd](https://github.com/jtroo/kanata/blob/main/docs/config.adoc#cmd) feature, but it's a bit harder to setup and is generally not recommended.
 
 ### Config examples
 

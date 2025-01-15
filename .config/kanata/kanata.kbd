@@ -20,13 +20,12 @@
 (defalias
   ;; Default Layers
   L_main (layer-switch main)
-  L_apps (layer-switch apps)
 
   ;; --- Vim layers ---
   ;; toggling different layers for Vim motions
+  L_ret_leader_tog (tap-hold-release 250 250 ret (layer-toggle leader))
   L_win_tog (tap-hold-release 250 250 w (layer-toggle window))
   L_f_ctrl_tog (tap-hold-release 250 250 f (layer-toggle ctrl_homerow))
-  L_g_apps_tog (tap-hold-release 250 250 g (layer-toggle apps))
   L_j_ctrl_tog (tap-hold-release 250 250 j (layer-toggle ctrl_homerow))
   L_f_norm_ctrl_tog (tap-hold-release 250 250 f (layer-toggle normal_mode_ctrl_layer))
   L_lsft_norm_shift_tog (tap-hold-release 250 250 lsft (layer-toggle normal_mode_shift_layer))
@@ -78,45 +77,39 @@
   ;; layer chords
   (j k) @L_leader 50 first-release ()
   (n m) @L_norm 50 first-release ()
-  (m ,) @L_apps 50 first-release ()
 
   ;; app chords
   (d f) @a_editor 25 first-release ()
   (c v) @a_terminal 25 first-release ()
   (f g) @a_firefox 50 first-release ()
   (v b) @a_chrome 50 first-release ()
-  (s d) @a_slack 50 first-release ()
 )
 
 (deflayermap (main)
   ;; w @L_win_tog
   f @L_f_ctrl_tog
-  ;; g @L_g_apps_tog
+  ret @L_ret_leader_tog
   ;; j @L_j_ctrl_tog
 )
 
-;; app launcher/switcher layer
-(deflayermap (apps)
+(deflayermap (leader)
+  ;; layers
   esc @L_main
   ' @L_main
+  i @L_main
+  w (multi (release-layer leader) @L_win)
+  n (multi (release-layer leader) @L_norm)
+
+  ;; apps
   s (multi @L_main @a_slack)
   c (multi @L_main @a_chrome)
   f (multi @L_main @a_firefox)
   t (multi @L_main @a_terminal)
-  e (multi @L_main @a_email)
+  q (multi @L_main @a_email)
+  e (multi @L_main @a_editor)
   d (multi @L_main @a_dbclient)
   r (multi @L_main @a_launcher)
-  ___ XX
-)
-
-(deflayermap (leader)
-  esc @L_main
-  ' @L_main
-  i @L_main
-  w @L_win
-  a @L_apps
-  n @L_norm
-  r (multi @L_main @a_launcher)
+  / (multi @L_main @a_terminal)
   ___ XX
 )
 
