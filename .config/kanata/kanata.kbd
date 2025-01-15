@@ -54,7 +54,8 @@
 
   ;; Apps
   a_chrome M-1
-  a_editor M-2
+  a_editor M-2      ;; Neovim
+  a_editor2 M-x     ;; VSCode
   a_firefox M-3
   a_postman M-4
   a_slack M-q
@@ -83,6 +84,7 @@
   (c v) @a_terminal 25 first-release ()
   (f g) @a_firefox 50 first-release ()
   (v b) @a_chrome 50 first-release ()
+  (r e) @a_slack 25 first-release ()
 )
 
 (deflayermap (main)
@@ -97,18 +99,20 @@
   esc @L_main
   ' @L_main
   i @L_main
-  w (multi (release-layer leader) @L_win)
   n (multi (release-layer leader) @L_norm)
+  w (multi (release-layer leader) @L_win)
+  ;; s (multi (release-layer leader) @L_search) ;; TODO: implement search layer (search for browser tabs/windows, file search, etc)
 
   ;; apps
-  s (multi @L_main @a_slack)
+  r (multi @L_main @a_slack)
   c (multi @L_main @a_chrome)
   f (multi @L_main @a_firefox)
   t (multi @L_main @a_terminal)
   q (multi @L_main @a_email)
   e (multi @L_main @a_editor)
   d (multi @L_main @a_dbclient)
-  r (multi @L_main @a_launcher)
+  x (multi @L_main @a_editor2)
+  spc (multi @L_main @a_launcher)
   / (multi @L_main @a_terminal)
   ___ XX
 )

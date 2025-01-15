@@ -44,12 +44,13 @@ is on my right thumb, you'll have to change it to your liking).
 
 Pressing/holding key assigned to `<leader>` takes you to the leader layer.
 This layer allows you to execute certain actions or move to
-other layers (same as Vim).
+other layers (same as Vim):
 
 - `<leader>w` - enter window layer
 - `<leader>n` - enter normal mode layer
-- `<leader>r` - runs launcher ([rofi](https://github.com/lbonn/rofi) in my case)
-- `<leader>q` - opens email client
+- `<leader>f` - open/focus Firefox
+- `<leader>q` - open/focus email client
+- `<leader>space` - open launcher ([rofi](https://github.com/lbonn/rofi) in my case)
 - and so on. I have all of my most frequently used apps in leader layer.
 
 Pressing `esc` or `'` exits from any layer.
@@ -65,7 +66,7 @@ Window layer lets you control window-related actions.
 - `<leader>wt` creates a new tab
 - `<leader>wf` toggle maximize window
 - `<leader>wm` minimize window
-- `<leader>w(h/j/k/l)` switch windows
+- `<leader>w(h/j/k/l)` switch windows left/below/above/right
 
 ### Normal mode layer
 
@@ -94,7 +95,7 @@ is a work in progress, I will try to add more features as time goes.
 ### CTRL layer
 
 Kanata has `tap-hold` functionality to trigger certain actions when the key is held.
-For example, when I hold a letter `f`, `CTRL` layer is triggered (similar to [home row mods](#home-row-mods), see below).
+For example, when I hold a `f` key, `CTRL` layer is triggered (similar to [home row mods](#home-row-mods), see below).
 When key is released, layer is exited (unlike a regular tap which puts you into some layer until `esc` is pressed).
 This makes it easy to navigate in some apps like Neovim, since I can:
 
