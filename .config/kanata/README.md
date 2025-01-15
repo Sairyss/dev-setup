@@ -32,7 +32,7 @@ move my hands away from the home row.
 Below is (non-exhaustive) list of key maps I use.
 For full list check the config: [kanata.kdb](./kanata.kbd)
 
-> [!NOTE] Note
+> [!NOTE]
 > This config is tested in KDE plasma. Might need some adjustments for
 > other DEs since it heavily utilizes default shortcuts to map certain actions.
 
@@ -136,7 +136,7 @@ Example configs for Kanata to enable home row mods:
 1. <https://github.com/dreamsofcode-io/home-row-mods/blob/main/kanata/linux/kanata.kbd>
 2. <https://github.com/jtroo/kanata/discussions/1455>
 
-> [!NOTE] Note
+> [!NOTE]
 > Home row mods are not for everyone, fast typists will have issues like having to
 > wait a bit longer when holding a mod key for it to trigger, which can disrupt the flow,
 > or accidentally trigger modifier keys during typing.
