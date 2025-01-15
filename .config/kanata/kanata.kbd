@@ -139,7 +139,7 @@
   p C-v  ;; paste
   n C-f3 ;; next search default key in some apps
   x (macro right bspc) ;; delete a letter under cursor
-  / C-f  ;; find
+  / (multi @L_main C-f)  ;; find
 
   ;; layers
   spc @L_leader

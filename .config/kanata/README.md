@@ -104,6 +104,11 @@ In my case it's `m+,` or `<leader>a`) puts me into the apps layer, so I can run 
 For example, `<apps>r` can run an app launcher like [rofi](https://github.com/lbonn/rofi),
 and `<apps>t` can run (or switch focus to) a terminal.
 
+For this to work you have 2 options:
+
+- Map your apps to any shortcuts in your DE (in my case it's `meta+(1-4)` and `meta+(q-r)` for apps, `meta+esc` for terminal, and `ctrl+space` for launcher). After that you can map those shortcuts to whatever layers you want with Kanata.
+- Alternatively you can run binaries directly with Kanata [cmd](https://github.com/jtroo/kanata/blob/main/docs/config.adoc#cmd) feature, but it's a bit harder to setup and is generally not recommended.
+
 ### Input Chords
 
 For most frequent apps/actions it's faster to just press `key1+key2` than going to a layer.
