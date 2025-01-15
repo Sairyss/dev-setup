@@ -1,0 +1,18 @@
+{
+  "created": "2023-10-14T17:54:58.642764983+02:00",
+  "updated": "2023-10-14T17:54:58.642814958+02:00",
+  "name": "allow-always-simple-golang-org",
+  "description": "",
+  "enabled": true,
+  "precedence": false,
+  "nolog": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "regexp",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "^(|.*\\.)golang\\.org",
+    "list": []
+  }
+}

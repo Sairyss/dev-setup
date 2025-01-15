@@ -1,9 +1,0 @@
----
-# Graphical Apps available on Linux and MacOS
-
-gui_apps:
-  - firefox # https://www.mozilla.org/en-US/firefox/
-  - flameshot # https://github.com/flameshot-org/flameshot
-  - keepassxc # https://github.com/keepassxreboot/keepassxc
-  - dbeaver # https://github.com/dbeaver/dbeaver
-  - neovide # https://github.com/neovide/neovide

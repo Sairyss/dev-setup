@@ -1,0 +1,18 @@
+{
+  "created": "2023-07-10T10:12:09.097558159+02:00",
+  "updated": "2023-07-10T10:12:09.097579684+02:00",
+  "name": "allow-always-simple-www-schemastore-org",
+  "description": "",
+  "enabled": true,
+  "precedence": false,
+  "nolog": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "www.schemastore.org",
+    "list": []
+  }
+}

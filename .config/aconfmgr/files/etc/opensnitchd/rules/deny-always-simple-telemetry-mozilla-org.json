@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-05T18:47:36.295271295+02:00",
+  "updated": "2022-10-05T18:47:36.295310584+02:00",
+  "name": "deny-always-simple-telemetry-mozilla-org",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "regexp",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "^(|.*\\.)telemetry\\.mozilla\\.org",
+    "list": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "created": "2022-12-18T20:37:24.983414057+01:00",
+  "updated": "2022-12-18T20:37:24.983435446+01:00",
+  "name": "deny-always-simple-mnt-sdc1-games-rimworld-game-rimworldlinux",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/mnt/sdc1/Games/RimWorld/game/RimWorldLinux",
+    "list": []
+  }
+}

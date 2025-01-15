@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-17T19:14:23.872018866+02:00",
+  "updated": "2022-10-17T19:14:23.872046855+02:00",
+  "name": "allow-always-simple-cht-sh",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "cht.sh",
+    "list": []
+  }
+}

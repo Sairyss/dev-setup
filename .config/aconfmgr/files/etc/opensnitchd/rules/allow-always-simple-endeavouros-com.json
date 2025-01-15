@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-06T09:55:15.446513039+02:00",
+  "updated": "2022-10-06T09:55:15.446607574+02:00",
+  "name": "allow-always-simple-endeavouros-com",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "regexp",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "^(|.*\\.)endeavouros\\.com",
+    "list": []
+  }
+}

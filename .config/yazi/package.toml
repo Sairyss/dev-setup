@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "dedukun/bookmarks", rev = "202e450" }, { use = "yazi-rs/plugins:git", rev = "600614a" }, { use = "Reledia/glow", rev = "5ce76dc" }, { use = "boydaihungst/mediainfo", rev = "ddfd5ec" }]
+
+[flavor]
+deps = [{ use = "yazi-rs/flavors:catppuccin-mocha", rev = "fc8eeaa" }]

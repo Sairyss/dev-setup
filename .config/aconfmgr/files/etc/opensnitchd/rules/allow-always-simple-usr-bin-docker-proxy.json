@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-06T14:20:56.552089061+02:00",
+  "updated": "2022-10-06T14:20:56.552107756+02:00",
+  "name": "allow-always-simple-usr-bin-docker-proxy",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/bin/docker-proxy",
+    "list": []
+  }
+}

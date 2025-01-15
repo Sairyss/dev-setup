@@ -1,0 +1,16 @@
+{
+  "created": "2023-01-27T14:24:24.545491907+01:00",
+  "updated": "2023-01-27T14:24:24.545512573+01:00",
+  "name": "deny-always-simple-checkpoint-prisma-io",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "checkpoint.prisma.io",
+    "list": []
+  }
+}

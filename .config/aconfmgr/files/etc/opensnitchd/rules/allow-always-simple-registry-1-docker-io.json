@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-06T12:18:47.030541541+02:00",
+  "updated": "2022-10-06T12:18:47.03055776+02:00",
+  "name": "allow-always-simple-registry-1-docker-io",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "registry-1.docker.io",
+    "list": []
+  }
+}

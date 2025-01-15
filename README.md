@@ -1,8 +1,15 @@
-# Dev Setup
+# Dotfiles
 
-My development setup. Includes dotfiles/configs, apps, tools, vscode extensions, neovim plugins, etc.
+List of modern tools and configs for development.
 
 ![terminal-screenshot](screenshot.png)
+
+### Configs
+
+### Vim-like motions in your Desktop Environment
+
+I remapped my keyboard to use specific hotkeys and Vim-like motions in my entire DE
+using [kanata](https://github.com/jtroo/kanata). Check out the [readme](./.config/kanata/README.md) to find out more.
 
 ## List of tools
 
@@ -18,10 +25,10 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 
 #### Files
 
-- [ranger](https://github.com/ranger/ranger) - terminal file manager
+- [yazi](https://github.com/sxyazi/yazi) - terminal file manager
 - [bat](https://github.com/sharkdp/bat) - same as `cat` but with syntax highlighting
-- [exa](https://github.com/ogham/exa) - same as `ls` but with syntax highlighting
-- [fasd](https://github.com/clvv/fasd) - quick access to files and directories
+- [eza](https://github.com/eza-community/eza) - same as `ls` but with syntax highlighting
+- [zoxide](https://github.com/ajeetdsouza/zoxide) - quick access to files and directories
 - [erdtree](https://github.com/solidiquis/erdtree) - better tree
 - [broot](https://github.com/Canop/broot) - a better way to navigate directories
 
@@ -60,6 +67,7 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [yank](https://github.com/mptre/yank) - copy terminal output to clipboard
 - [jq](https://github.com/stedolan/jq) - command-line JSON processor
 - [jid](https://github.com/simeji/jid) - Json Incremental Digger
+- [hyperfine](https://github.com/sharkdp/hyperfine) - terminal benchmarking tool
 - [mprocs](https://github.com/pvolok/mprocs) - runs multiple commands in parallel and shows output of each command separately
 
 ### GUI Tools
@@ -92,6 +100,25 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [Fira Code](https://github.com/tonsky/FiraCode)
 - [Hack](https://github.com/source-foundry/Hack)
 
+### NeoVim Plugins
+
+- [LazyVim](https://github.com/LazyVim/LazyVim) - neovim setup to make it feel like an IDE
+- [multicursor.nvim](https://github.com/jake-stewart/multicursor.nvim) - multi-select in vim, similar to ctrl + d in vscode
+- [arrow.nvim](https://github.com/otavioschwanck/arrow.nvim) - mark buffers on the fly and switch between them with hotkeys
+- [yazi.nvim](https://github.com/mikavilpas/yazi.nvim) - use yazi file manager in a floating window inside vim
+- [oil.nvim](https://github.com/stevearc/oil.nvim) - edit your filesystem like a normal Neovim buffer
+- [flash.nvim](https://github.com/folke/flash.nvim) - navigate your code with search labels, enhanced character motions, and Treesitter integration
+- [diffview](https://github.com/sindrets/diffview.nvim) - easily cycling through diffs for all modified files
+- [tabout.nvim](https://github.com/abecodes/tabout.nvim) - tabbing out from parentheses, quotes, and similar contexts
+- [aerial.nvim](https://github.com/stevearc/aerial.nvim) - a code outline window for skimming and quick navigation
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - use treesitter to autoclose and autorename html tag
+- [avante.nvim](https://github.com/yetone/avante.nvim) - AI assistant similar to Cursor IDE
+- [treewalker.nvim](https://github.com/aaronik/treewalker.nvim) - move around code using treesitter nodes
+- [timber.nvim](https://github.com/Goose97/timber.nvim) - insert log statements using hotkeys
+- [tiny-inline-diagnostic.nvim](https://github.com/rachartier/tiny-inline-diagnostic.nvim) - better looking inline diagnostics
+
+To see full list of Neovim plugins, check out [plugins.lua](./.config/nvim/lua/plugins/plugins.lua) file.
+
 ### VSCode Extensions
 
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize settings
@@ -117,25 +144,26 @@ My development setup. Includes dotfiles/configs, apps, tools, vscode extensions,
 - [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - smaller activity bar
 - [Customize UI](https://marketplace.visualstudio.com/items?itemName=iocave.customize-ui) - Advanced VSCode user interface customizations. Can be used as alternative to "Activitus Bar" above.
 
-### NeoVim Plugins
-
-- [LazyVim](https://github.com/LazyVim/LazyVim) - neovim setup to make it feel like an IDE
-- [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - multi-select in vim, similar to ctrl + d in vscode
-- [harpoon](https://github.com/ThePrimeagen/harpoon) - mark buffers on the fly and switch between them with hotkeys
-- [vim-fugitive](https://github.com/tpope/vim-fugitive) - vim git plugin
-- [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) - rainbow parentheses
-- [rnvimr](https://github.com/kevinhwang91/rnvimr) - use ranger file manager in a floating window inside vim
-- [hop](https://github.com/phaazon/hop.nvim) - EasyMotion-like plugin allowing you to jump anywhere in a document with as few keystrokes as possible
-- [flash.nvim](https://github.com/folke/flash.nvim) - navigate your code with search labels, enhanced character motions, and Treesitter integration
-- [diffview](https://github.com/sindrets/diffview.nvim) - easily cycling through diffs for all modified files
-- [tabout.nvim](https://github.com/abecodes/tabout.nvim) - tabbing out from parentheses, quotes, and similar contexts
-- [aerial.nvim](https://github.com/stevearc/aerial.nvim) - a code outline window for skimming and quick navigation
-- [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar) - extensible neovim scrollbar
-- [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - autopair plugin
-- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag) - use treesitter to autoclose and autorename html tag
-- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) - toggle terminals in neovim
-- [Neovide](https://github.com/neovide/neovide) - GUI for Neovim
-
 ### Other
 
 - [hosts](https://github.com/StevenBlack/hosts) - hosts file to block malicious sites, trackers, ads, etc.
+
+## Sync configs
+
+To backup and restore configs, store your configs in github and use Stow to create symbolic links.
+<https://www.gnu.org/software/stow/manual/stow.html>
+
+<https://youtu.be/y6XCebnB9gs?si=TnjSMO_tmL5D8Ncn>
+
+- Put `.dotfiles` to home directory and execute `stow . --ignore='README.md'` from inside it.
+
+## Sync apps
+
+To automatically install apps use Aconfmgr <https://github.com/CyberShadow/aconfmgr> (Arch Linux only).
+
+- `aconfmgr save`
+- `aconfmgr apply`
+
+## Docs
+
+- <https://wiki.archlinux.org/title/Dotfiles>

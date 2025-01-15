@@ -1,0 +1,16 @@
+{
+  "created": "2022-11-26T15:07:39.434601941+01:00",
+  "updated": "2022-11-26T15:07:39.434639108+01:00",
+  "name": "deny-always-simple-home-user-local-share-steam-linux32-steamerrorreporter",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/home/user/.local/share/Steam/linux32/steamerrorreporter",
+    "list": []
+  }
+}

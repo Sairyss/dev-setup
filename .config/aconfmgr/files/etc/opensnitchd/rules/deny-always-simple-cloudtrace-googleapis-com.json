@@ -1,0 +1,16 @@
+{
+  "created": "2023-02-24T11:34:33.435738805+01:00",
+  "updated": "2023-02-24T11:34:33.436197553+01:00",
+  "name": "deny-always-simple-cloudtrace-googleapis-com",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "cloudtrace.googleapis.com",
+    "list": []
+  }
+}

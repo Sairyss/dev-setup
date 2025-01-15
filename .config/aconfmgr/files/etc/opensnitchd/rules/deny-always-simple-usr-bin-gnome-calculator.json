@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-12T16:52:52.148255669+02:00",
+  "updated": "2022-10-12T16:52:52.148272586+02:00",
+  "name": "deny-always-simple-usr-bin-gnome-calculator",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/bin/gnome-calculator",
+    "list": []
+  }
+}

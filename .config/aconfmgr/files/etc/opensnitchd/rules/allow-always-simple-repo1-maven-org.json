@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-06T12:29:48.461994779+02:00",
+  "updated": "2022-10-06T12:29:48.462018193+02:00",
+  "name": "allow-always-simple-repo1-maven-org",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "repo1.maven.org",
+    "list": []
+  }
+}

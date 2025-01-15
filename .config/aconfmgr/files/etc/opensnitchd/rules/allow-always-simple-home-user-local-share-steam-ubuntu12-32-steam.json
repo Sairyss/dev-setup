@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-06T20:08:11.923512924+02:00",
+  "updated": "2022-10-06T20:08:11.923539485+02:00",
+  "name": "allow-always-simple-home-user-local-share-steam-ubuntu12-32-steam",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/home/user/.local/share/Steam/ubuntu12_32/steam",
+    "list": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-07T14:19:01.115586397+02:00",
+  "updated": "2022-10-07T14:19:01.11560766+02:00",
+  "name": "allow-always-simple-www-googleapis-com",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "www.googleapis.com",
+    "list": []
+  }
+}

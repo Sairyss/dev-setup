@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-05T18:52:01.236158584+02:00",
+  "updated": "2022-10-05T18:52:01.236186645+02:00",
+  "name": "allow-always-simple-archlinux-org",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "regexp",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "^(|.*\\.)archlinux\\.org",
+    "list": []
+  }
+}

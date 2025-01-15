@@ -1,0 +1,18 @@
+{
+  "created": "2023-07-10T14:39:16.608354689+02:00",
+  "updated": "2023-07-10T14:39:16.608377847+02:00",
+  "name": "allow-always-simple-api-mason-registry-dev",
+  "description": "",
+  "enabled": true,
+  "precedence": false,
+  "nolog": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "api.mason-registry.dev",
+    "list": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-07T15:19:13.29728264+02:00",
+  "updated": "2022-10-07T15:19:13.297303677+02:00",
+  "name": "allow-always-simple-accounts-google-com",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "accounts.google.com",
+    "list": []
+  }
+}

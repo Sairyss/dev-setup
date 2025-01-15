@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-07T14:53:23.037588999+02:00",
+  "updated": "2022-10-07T14:53:23.037612359+02:00",
+  "name": "deny-always-simple-usr-lib-gsd-print-notifications",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/lib/gsd-print-notifications",
+    "list": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-06T10:16:24.415861533+02:00",
+  "updated": "2022-10-06T10:16:24.415876601+02:00",
+  "name": "allow-always-simple-bitbucket-org",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "bitbucket.org",
+    "list": []
+  }
+}

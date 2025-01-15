@@ -1,0 +1,16 @@
+{
+  "created": "2023-03-01T11:30:14.01866414+01:00",
+  "updated": "2023-03-01T11:30:14.018683835+01:00",
+  "name": "deny-always-simple-usr-lib-geoclue",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/lib/geoclue",
+    "list": []
+  }
+}

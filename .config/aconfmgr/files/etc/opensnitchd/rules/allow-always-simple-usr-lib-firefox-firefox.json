@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-05T18:47:22.118663841+02:00",
+  "updated": "2022-10-05T18:47:22.118678037+02:00",
+  "name": "allow-always-simple-usr-lib-firefox-firefox",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/lib/firefox/firefox",
+    "list": []
+  }
+}

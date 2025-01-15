@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-13T10:02:30.043994204+02:00",
+  "updated": "2022-10-13T10:02:30.044019551+02:00",
+  "name": "allow-always-simple-schemastore-org",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "schemastore.org",
+    "list": []
+  }
+}

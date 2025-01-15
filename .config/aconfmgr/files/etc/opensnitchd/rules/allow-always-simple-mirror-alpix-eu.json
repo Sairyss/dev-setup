@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-06T09:55:06.398874086+02:00",
+  "updated": "2022-10-06T09:55:06.398890558+02:00",
+  "name": "allow-always-simple-mirror-alpix-eu",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "mirror.alpix.eu",
+    "list": []
+  }
+}

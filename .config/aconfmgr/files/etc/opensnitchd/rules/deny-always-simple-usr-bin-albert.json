@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-07T14:04:41.097957507+02:00",
+  "updated": "2022-10-07T14:04:41.09797528+02:00",
+  "name": "deny-always-simple-usr-bin-albert",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "process.path",
+    "sensitive": false,
+    "data": "/usr/bin/albert",
+    "list": []
+  }
+}

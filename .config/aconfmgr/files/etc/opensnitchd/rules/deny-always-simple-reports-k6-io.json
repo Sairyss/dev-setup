@@ -1,0 +1,16 @@
+{
+  "created": "2022-12-14T11:54:00.107495749+01:00",
+  "updated": "2022-12-14T11:54:00.107517766+01:00",
+  "name": "deny-always-simple-reports-k6-io",
+  "enabled": true,
+  "precedence": false,
+  "action": "deny",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "reports.k6.io",
+    "list": []
+  }
+}

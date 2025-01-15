@@ -1,0 +1,16 @@
+{
+  "created": "2023-01-09T14:38:06.19069208+01:00",
+  "updated": "2023-01-09T14:38:06.191207164+01:00",
+  "name": "allow-always-simple-64",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "network",
+    "operand": "dest.network",
+    "sensitive": false,
+    "data": "::/64",
+    "list": []
+  }
+}

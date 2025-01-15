@@ -1,0 +1,16 @@
+{
+  "created": "2022-10-06T10:53:36.714612847+02:00",
+  "updated": "2022-10-06T10:53:36.714627081+02:00",
+  "name": "allow-always-simple-mirror-moson-org",
+  "enabled": true,
+  "precedence": false,
+  "action": "allow",
+  "duration": "always",
+  "operator": {
+    "type": "simple",
+    "operand": "dest.host",
+    "sensitive": false,
+    "data": "mirror.moson.org",
+    "list": []
+  }
+}
