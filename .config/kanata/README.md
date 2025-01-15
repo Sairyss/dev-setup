@@ -36,12 +36,20 @@ For full list check the config: [kanata.kdb](./kanata.kbd)
 > This config is tested in KDE plasma. Might need some adjustments for
 > other DEs since it heavily utilizes default shortcuts to map certain actions.
 
-### Window layer
+### Leader layer
 
 `<leader>` key is mapped to `j+k` chord at the time of writing.
+Pressing `<leader>` key takes you to the leader layer.
+This layer allows you to execute certain actions or move to
+other layers (same as Vim).
+Press `esc` or `'` to exit from any layer.
 
-- `<leader>w` puts me into the "Window layer"
-- `<leader>wq` quits the window
+### Window layer
+
+Window layer lets you control window-related actions.
+
+- `<leader>w` puts you into the "Window layer"
+- `<leader>wq` quits focused window
 - `<leader>we` switches to the previous window
 - `<leader>wd` closes the tab
 - `<leader>wt` creates a new tab
@@ -70,7 +78,7 @@ hotkeys for text manipulations (see config for examples). If you use a different
 DE and/or default shortcuts you may need to modify the config to your needs.
 
 Not all functionality is possible/easy to replicate outside of Vim,
-but I've managed to replicate some most used basic things. It's still
+but I've managed to replicate some commonly used basic things. It still
 is a work in progress, I will try to add more features as time goes.
 
 ### CTRL layer
@@ -78,21 +86,21 @@ is a work in progress, I will try to add more features as time goes.
 Kanata has `tap-hold` functionality to trigger certain actions when the key is held.
 For example, when I hold a letter `f`, `CTRL` layer is triggered (similar to [home row mods](#home-row-mods), see below).
 When key is released, layer is exited (unlike a regular tap which puts you into some layer until `esc` is pressed).
-This makes it easy to navigate some apps like Neovim, since I can:
+This makes it easy to navigate in some apps like Neovim, since I can:
 
-- press `f+d` and `f+u` instead of `ctrl+d` and `ctrl+u` to go up and down
-- move between windows using `f+(h/j/k/l)` instead of `ctrl+(h/j/k/l)`
+- hold `f` and press `u` or `d` to go up/down in Neovim instead of holding `ctrl`
+- move between open windows using `f+(h/j/k/l)` instead of `ctrl+(h/j/k/l)`
 - etc.
 
 Instead of holding `ctrl` with my pinky, I hold `f` with my index finger, which doesn't strain my fingers as much.
 
 You can map any layer to any key this way.
 
-### Apps
+### Apps layer
 
 I also launch apps or switch focus to app windows using this approach.
-For example, pressing `<apps>` key (similar to `<leader>` key in vim, you can map it to any key combination)
-puts me into the apps layer, and I can run any app like that.
+For example, pressing `<apps>` key (similar to `<leader>` key in vim, you can map it to any key combination.
+In my case it's `m+,` or `<leader>a`) puts me into the apps layer, so I can run any app from it.
 For example, `<apps>r` can run an app launcher like [rofi](https://github.com/lbonn/rofi),
 and `<apps>t` can run (or switch focus to) a terminal.
 
@@ -136,7 +144,7 @@ Example configs for Kanata to enable home row mods:
 1. <https://github.com/dreamsofcode-io/home-row-mods/blob/main/kanata/linux/kanata.kbd>
 2. <https://github.com/jtroo/kanata/discussions/1455>
 
-> [!NOTE]
+> [!WARNING]
 > Home row mods are not for everyone, fast typists will have issues like having to
 > wait a bit longer when holding a mod key for it to trigger, which can disrupt the flow,
 > or accidentally trigger modifier keys during typing.

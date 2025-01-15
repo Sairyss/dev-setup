@@ -99,13 +99,13 @@
 (deflayermap (apps)
   esc @L_main
   ' @L_main
-  s @a_slack
-  c @a_chrome
-  f @a_firefox
-  t @a_terminal
-  e @a_email
-  d @a_dbclient
-  r @a_launcher
+  s (multi @L_main @a_slack)
+  c (multi @L_main @a_chrome)
+  f (multi @L_main @a_firefox)
+  t (multi @L_main @a_terminal)
+  e (multi @L_main @a_email)
+  d (multi @L_main @a_dbclient)
+  r (multi @L_main @a_launcher)
   ___ XX
 )
 
@@ -114,8 +114,9 @@
   ' @L_main
   i @L_main
   w @L_win
-  r (multi @L_main @a_launcher)
+  a @L_apps
   n @L_norm
+  r (multi @L_main @a_launcher)
   ___ XX
 )
 
@@ -124,6 +125,7 @@
   ' @L_main
   0 home              ;; go to the beginning of the line
   i @L_main           ;; go to main layer (insert mode)
+  a @L_main           ;; go to main layer (insert mode)
   h left
   l right
   k up
