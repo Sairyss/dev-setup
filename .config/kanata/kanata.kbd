@@ -17,21 +17,27 @@
       lalt spc ralt
 )
 
+(defvar
+  ;; Variables
+  tap_timeout 250
+  hold_timeout 250
+)
+
 (defalias
   ;; Default Layers
   L_main (layer-switch main)
 
   ;; --- Vim layers ---
   ;; toggling different layers for Vim motions
-  L_ret_leader_tog (tap-hold-release 250 250 ret (layer-toggle leader))
-  L_win_tog (tap-hold-release 250 250 w (layer-toggle window))
-  L_f_ctrl_tog (tap-hold-release 250 250 f (layer-toggle ctrl_homerow))
-  L_j_ctrl_tog (tap-hold-release 250 250 j (layer-toggle ctrl_homerow))
-  L_f_norm_ctrl_tog (tap-hold-release 250 250 f (layer-toggle normal_mode_ctrl_layer))
-  L_lsft_norm_shift_tog (tap-hold-release 250 250 lsft (layer-toggle normal_mode_shift_layer))
-  L_rsft_norm_shift_tog (tap-hold-release 250 250 rsft (layer-toggle normal_mode_shift_layer))
-  L_lsft_norm_d_lshift_tog (tap-hold-release 250 250 lsft (layer-toggle normal_mode_d_shift_layer))
-  L_g_norm_g_tog (tap-hold-release 250 250 lsft (layer-toggle normal_mode_g_layer))
+  L_ret_leader_tog (tap-hold-release $tap_timeout $hold_timeout ret (layer-toggle leader))
+  L_win_tog (tap-hold-release $tap_timeout $hold_timeout w (layer-toggle window))
+  L_f_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout f (layer-toggle ctrl_homerow))
+  L_j_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout j (layer-toggle ctrl_homerow))
+  L_f_norm_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout f (layer-toggle normal_mode_ctrl_layer))
+  L_lsft_norm_shift_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_shift_layer))
+  L_rsft_norm_shift_tog (tap-hold-release $tap_timeout $hold_timeout rsft (layer-toggle normal_mode_shift_layer))
+  L_lsft_norm_d_lshift_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_d_shift_layer))
+  L_g_norm_g_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_g_layer))
 
   ;; switching to different layers for Vim motions
   L_win (layer-switch window)
@@ -85,6 +91,9 @@
   (f g) @a_firefox 50 first-release ()
   (v b) @a_chrome 50 first-release ()
   (r e) @a_slack 25 first-release ()
+
+  ;; key chords
+  (x c) esc 50 first-release () ;; escape easier to reach
 )
 
 (deflayermap (main)
@@ -296,6 +305,7 @@
   o C-o
   i C-i
   t C-t
+  p C-p
   ___ XX
 )
 
