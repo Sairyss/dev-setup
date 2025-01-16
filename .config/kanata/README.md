@@ -167,10 +167,12 @@ Example configs for Kanata to enable home row mods:
 > triggering modifier keys during typing or experiencing slowness when pressing quick
 > one-off shortcuts (like `ctrl+c` or `ctrl+v`) since it takes a bit longer to register
 > a hold action, which disrupts the flow.
-> If that's the case for you, consider mapping only some most used key combinations
-> instead of remapping all the keys, or use kanata [input chords](https://github.com/jtroo/kanata/blob/v1.7.0/docs/config.adoc#input-chords--combos-v2),
-> or try home row mods for some hold+key actions (like [Modifier layers](#modifier-layers) described above)
-> which work pretty great in kanata thanks to [tap-hold-release](https://github.com/jtroo/kanata/blob/v1.7.0/docs/config.adoc#tap-hold) feature.
+
+If regular home row mods don't work for you, consider this:
+
+- map only most used key combinations instead of remapping all the keys to minimize accidental presses
+- try home row mods for some hold+key actions (like [Modifier layers](#modifier-layers) described above) which work pretty great in kanata thanks to [tap-hold-release](https://github.com/jtroo/kanata/blob/v1.7.0/docs/config.adoc#tap-hold) feature.
+- try kanata [input chords](https://github.com/jtroo/kanata/blob/v1.7.0/docs/config.adoc#input-chords--combos-v2)
 
 ### Alternatives
 
