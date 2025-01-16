@@ -34,10 +34,19 @@
   L_f_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout f (layer-toggle ctrl_homerow))
   L_j_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout j (layer-toggle ctrl_homerow))
   L_f_norm_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout f (layer-toggle normal_mode_ctrl_layer))
+  L_g_norm_g_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_g_layer))
+
+  ;; shift modes tog
   L_lsft_norm_shift_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_shift_layer))
   L_rsft_norm_shift_tog (tap-hold-release $tap_timeout $hold_timeout rsft (layer-toggle normal_mode_shift_layer))
-  L_lsft_norm_d_lshift_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_d_shift_layer))
-  L_g_norm_g_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_g_layer))
+  L_lsft_norm_d_shift_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_d_shift_layer))
+  L_rsft_norm_d_shift_tog (tap-hold-release $tap_timeout $hold_timeout rsft (layer-toggle normal_mode_d_shift_layer))
+  L_lsft_norm_c_shift_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_c_shift_layer))
+  L_rsft_norm_c_shift_tog (tap-hold-release $tap_timeout $hold_timeout rsft (layer-toggle normal_mode_c_shift_layer))
+  L_lsft_norm_y_shift_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_y_shift_layer))
+  L_rsft_norm_y_shift_tog (tap-hold-release $tap_timeout $hold_timeout rsft (layer-toggle normal_mode_y_shift_layer))
+  L_lsft_norm_v_shift_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_v_shift_layer))
+  L_rsft_norm_v_shift_tog (tap-hold-release $tap_timeout $hold_timeout rsft (layer-toggle normal_mode_v_shift_layer))
 
   ;; switching to different layers for Vim motions
   L_win (layer-switch window)
@@ -197,7 +206,8 @@
 (deflayermap (normal_mode_g_layer)
   esc @L_norm
   ' @L_norm
-  g (multi @L_norm C-home) ;; go to the end of the document, same as "gg" in vim
+  g (multi @L_norm C-home)               ;; go to the beginning of the document, same as "gg" in vim
+  c (multi @L_norm (macro home / / spc)) ;; comment line (will only use // since it doesn't know the context language)
   ___ XX
 )
 
@@ -210,7 +220,8 @@
   0 (multi @L_norm (macro S-home C-c del))          ;; delete to the position 0 of the line (same as vim)
   4 (multi @L_norm (macro S-end C-c del))           ;; delete to the end of the line, same as d$ in vim
   6 (multi @L_norm (macro S-home C-c del))          ;; delete to the beginning of the line, same as d^ in vim
-  lsft @L_lsft_norm_d_lshift_tog
+  lsft @L_lsft_norm_d_shift_tog
+  rsft @L_rsft_norm_d_shift_tog
   ___ XX
 )
 
@@ -220,6 +231,7 @@
   ' @L_norm
   4 (multi @L_norm (macro S-end C-c del))           ;; delete to the end of the line, same as d$ in vim
   6 (multi @L_norm (macro S-home C-c del))          ;; delete to the beginning of the line, same as d^ in vim
+  g (multi @L_norm (macro S-pgdn C-c del))          ;; delete to the end of the document
   ___ XX
 )
 
@@ -238,6 +250,8 @@
   ' @L_norm
   i @L_c_i
   0 (multi @L_main (macro S-home C-c del)) ;; cut to the position 0 of the line and go insert mode (same as vim)
+  lsft @L_lsft_norm_c_shift_tog
+  rsft @L_rsft_norm_c_shift_tog
   ___ XX
 )
 
@@ -247,6 +261,16 @@
   ' @L_norm
   w (multi @L_main @cut_word) ;; cut word, same as "ciw" in vim
   g (multi @L_main (macro pgup home S-pgdn C-c del)) ;; cut entire document
+  ___ XX
+)
+
+;; "c" mode shift layer
+(deflayermap (normal_mode_c_shift_layer)
+  esc @L_norm
+  ' @L_norm
+  4 (multi @L_main (macro S-end C-c del))           ;; cut to the end of the line, same as d$ in vim
+  6 (multi @L_main (macro S-home C-c del))          ;; cut to the beginning of the line, same as d^ in vim
+  g (multi @L_main (macro S-pgdn C-c del))                  ;; cut to the end of the document
   ___ XX
 )
 
@@ -267,6 +291,8 @@
   d (multi @L_norm (macro C-c del))
   c (multi @L_main (macro C-c del))
   x (multi @L_norm del)
+  lsft @L_lsft_norm_v_shift_tog
+  rsft @L_rsft_norm_v_shift_tog
   ___ XX
 )
 
@@ -275,7 +301,17 @@
   esc @L_norm
   ' @L_norm
   w (multi @L_v (macro C-right S-C-left))   ;; select word
-  g (multi @L_v (macro pgup home S-pgdn)) ;; select entire document
+  g (multi @L_v (macro pgup home S-pgdn))   ;; select entire document
+  ___ XX
+)
+
+;; "v" mode shift layer
+(deflayermap (normal_mode_v_shift_layer)
+  esc @L_norm
+  ' @L_norm
+  4 (multi @L_v S-end)           ;; select to the end of the line, same as d$ in vim
+  6 (multi @L_v S-home)          ;; select to the beginning of the line, same as d^ in vim
+  g (multi @L_v S-pgdn)          ;; select to the end of the document
   ___ XX
 )
 
@@ -285,6 +321,8 @@
   ' @L_norm
   i @L_y_i
   0 (multi @L_main (macro S-home C-c esc)) ;; yank to the position 0 of the line and go insert mode (same as vim)
+  lsft @L_lsft_norm_y_shift_tog
+  rsft @L_rsft_norm_y_shift_tog
   ___ XX
 )
 
@@ -294,6 +332,16 @@
   ' @L_norm
   w (multi @L_norm (macro C-right S-C-left C-c esc)) ;; yank word
   g (multi @L_norm (macro pgup home S-pgdn C-c esc)) ;; Copy entire document
+  ___ XX
+)
+
+;; "y" mode shift layer
+(deflayermap (normal_mode_y_shift_layer)
+  esc @L_norm
+  ' @L_norm
+  4 (multi @L_norm (macro S-end C-c esc))          ;; copy to the end of the line, same as d$ in vim
+  6 (multi @L_norm(macro S-home C-c esc))          ;; copy to the beginning of the line, same as d^ in vim
+  g (multi @L_norm(macro S-pgdn C-c esc))          ;; copy to the end of the document
   ___ XX
 )
 

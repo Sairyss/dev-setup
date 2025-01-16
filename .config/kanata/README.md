@@ -79,10 +79,10 @@ While in normal mode you can do things like:
 - `gg` and `G` (`Shift+g`) to go to the beginning/end of the document
 - `diw` to delete a word and copy it (`ciw` to cut and go to insert mode)
 - `dd` to delete the line, `dig` to delete all text (and copy it)
-- `$` (`Shift+4`) and `^` (`Shift+6`) to go to the beginning/end of the line
-- `r` to replace letter under cursor
 - `y` and `p` to copy and paste (`yy` will copy the line, `yiw` will copy the word, `yig` will copy all text)
 - `v` for Visual Mode (`viw` will select the word, `vig` will select all text)
+- `r` to replace letter under cursor
+- `$` (`Shift+4`) and `^` (`Shift+6`) to go to the beginning/end of the line (works with `d`, `y` and `v`)
 - etc.
 
 This functionality is achieved by creating macros that execute KDE's
