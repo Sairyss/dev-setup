@@ -309,10 +309,9 @@
 (deflayermap (normal_mode_v_shift_layer)
   esc @L_norm
   ' @L_norm
-  4 (multi @L_v S-end)    ;; select to the end of the line, same as d$ in vim
-  6 (multi @L_v S-home)   ;; select to the beginning of the line, same as d^ in vim
-  g (multi @L_v S-pgdn)   ;; select to the end of the document
-  p (multi @L_v C-c C-v)  ;; copies selected text and overwrites with pasted text (it's default to lowercase p in vim, but I swapped p and P in my vim)
+  4 (multi @L_v S-end)               ;; select to the end of the line, same as d$ in vim
+  6 (multi @L_v S-home)              ;; select to the beginning of the line, same as d^ in vim
+  g (multi @L_v S-pgdn)              ;; select to the end of the document
   ___ XX
 )
 
