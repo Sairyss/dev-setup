@@ -160,7 +160,7 @@
   d @L_d
   c @L_c
   v @L_v
-  y @L_v
+  y @L_y
   ___ XX
 
   ;; keys from shift layer without the need to press shift (shift layer still works though)
@@ -292,7 +292,8 @@
 (deflayermap (normal_mode_y_i_layer)
   esc @L_norm
   ' @L_norm
-  w (multi @L_norm (macro C-right S-C-left C-c)) ;; yank word
+  w (multi @L_norm (macro C-right S-C-left C-c esc)) ;; yank word
+  g (multi @L_norm (macro pgup home S-pgdn C-c esc)) ;; Copy entire document
   ___ XX
 )
 
