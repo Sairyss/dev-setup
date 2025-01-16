@@ -33,6 +33,7 @@
   L_win_tog (tap-hold-release $tap_timeout $hold_timeout w (layer-toggle window))
   L_f_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout f (layer-toggle ctrl_homerow))
   L_j_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout j (layer-toggle ctrl_homerow))
+  L_d_alt_tog (tap-hold-release $tap_timeout $hold_timeout d (layer-toggle alt_homerow))
   L_f_norm_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout f (layer-toggle normal_mode_ctrl_layer))
   L_g_norm_g_tog (tap-hold-release $tap_timeout $hold_timeout lsft (layer-toggle normal_mode_g_layer))
 
@@ -93,6 +94,7 @@
 (defchordsv2-experimental
   ;; layer chords
   (j k) @L_leader 50 first-release ()
+  (s d f) @L_leader 50 first-release ()
   (n m) @L_norm 50 first-release ()
 
   ;; app chords
@@ -109,6 +111,7 @@
 (deflayermap (main)
   ;; w @L_win_tog
   f @L_f_ctrl_tog
+  d @L_d_alt_tog
   ret @L_ret_leader_tog
   ;; j @L_j_ctrl_tog
 )
@@ -127,13 +130,15 @@
   c (multi @L_main @a_chrome)
   f (multi @L_main @a_firefox)
   t (multi @L_main @a_terminal)
-  q (multi @L_main @a_email)
+  b (multi @L_main @a_email)
   e (multi @L_main @a_editor)
   d (multi @L_main @a_dbclient)
   x (multi @L_main @a_editor2)
   p (multi @L_main @a_clipboard)
   spc (multi @L_main @a_launcher)
   / (multi @L_main @a_terminal)
+  q (multi @L_main A-tab)       ;; go to previous window (alt-tab)
+  tab (multi @L_main A-tab)     ;; go to previous window (alt-tab)
   ___ XX
 )
 
@@ -345,27 +350,6 @@
   ___ XX
 )
 
-;; hold "f" to enter ctrl layer. Useful for navigating apps like vim with ctrl+d and ctrl+u and so on.
-(deflayermap (ctrl_homerow)
-  esc @L_main
-  ' @L_main
-  d C-d
-  u C-u
-  l C-l
-  h C-h
-  j C-j
-  k C-k
-  a C-a
-  c C-c
-  v C-v
-  o C-o
-  i C-i
-  r C-r
-  t C-t
-  p C-p
-  ___ XX
-)
-
 ;; layer to help with normal mode "r" key to replace the letter under cursor, same as in Vim
 (deflayermap (normal_mode_replace_single_letter_layer)
   esc @L_main
@@ -391,3 +375,48 @@
   l M-A-right ;; Switch to Window to the Right
   ___ XX
 )
+
+;; ----- Home row mods below -----
+;; hold "f" to enter ctrl layer. Useful for navigating apps like vim with ctrl+d and ctrl+u and so on.
+(deflayermap (ctrl_homerow)
+  esc @L_main
+  ' @L_main
+  d C-d
+  u C-u
+  l C-l
+  h C-h
+  j C-j
+  k C-k
+  a C-a
+  c C-c
+  v C-v
+  o C-o
+  i C-i
+  r C-r
+  t C-t
+  p C-p
+  ___ XX
+)
+
+;; hold "d" to enter alt layer.
+(deflayermap (alt_homerow)
+  esc @L_main
+  ' @L_main
+  d A-d
+  u A-u
+  l A-l
+  h A-h
+  j A-j
+  k A-k
+  a A-a
+  c A-c
+  v A-v
+  o A-o
+  i A-i
+  r A-r
+  t A-t
+  p A-p
+  tab A-tab
+  ___ XX
+)
+

@@ -38,7 +38,7 @@ return {
     branch = "1.0",
     keys = {
       {
-        "<M-esc>",
+        "<C-esc>",
         mode = { "n" },
         function()
           local mc = require("multicursor-nvim")

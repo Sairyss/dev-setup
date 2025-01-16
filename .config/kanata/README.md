@@ -49,7 +49,8 @@ other layers (same as Vim):
 - `<leader>w` - enter window layer
 - `<leader>n` - enter normal mode layer
 - `<leader>f` - open/focus Firefox
-- `<leader>q` - open/focus email client
+- `<leader>t` - open/focus Terminal
+- `<leader>q` - go to previous window
 - `<leader>space` - open launcher ([rofi](https://github.com/lbonn/rofi) in my case)
 - `<leader>p` - open clipboard history and go to normal mode so you can navigate using `hjkl` and paste using `p` (uses KDE clipboard by default)
 - and so on. I have all of my most frequently used apps in leader layer.
@@ -93,10 +94,10 @@ Not all functionality is possible/easy to replicate outside of Vim,
 but I've managed to replicate some commonly used basic things. It still
 is a work in progress, I will try to add more features as time goes.
 
-### CTRL layer
+### Modifier layers
 
 Kanata has `tap-hold` functionality to trigger certain actions when the key is held.
-For example, when I hold a `f` key, `CTRL` layer is triggered (similar to [home row mods](#home-row-mods), see below).
+For example, when I hold a `f` key, `CTRL` layer is triggered.
 When key is released, layer is exited (unlike a regular tap which puts you into some layer until `esc` is pressed).
 This makes it easy to navigate in some apps like Neovim, since I can:
 
@@ -105,6 +106,11 @@ This makes it easy to navigate in some apps like Neovim, since I can:
 - etc.
 
 Instead of holding `ctrl` with my pinky, I hold `f` with my index finger, which doesn't strain my fingers as much.
+
+Same thing is done for `alt`. When holding `d`, alt layer is triggered. It's useful since I navigate
+my terminal windows using `alt+(h/j/k/l)`, which now becomes `d+(h/j/k/l)`.
+
+This approach is described in [home row mods](#home-row-mods) section below.
 
 You can map any layer to any key this way.
 
@@ -148,7 +154,7 @@ For this to work you have 2 options:
 
 ### Home row mods
 
-Home row mods is an approach to map your modifier keys (`ctrl`, `alt`, `shift`, `meta`) into the home row (`hjkl` and `sdfg`) when the button is held.
+Home row mods is an approach to map your modifier keys (`ctrl`, `alt`, `shift`, `meta`) into the home row (`hjkl` and/or `sdfg`) when the button is held.
 Read more about home row mods here: <https://precondition.github.io/home-row-mods>
 
 Example configs for Kanata to enable home row mods:
@@ -162,7 +168,7 @@ Example configs for Kanata to enable home row mods:
 > or accidentally trigger modifier keys during typing.
 > If that's the case for you, consider mapping only some most used key combinations
 > instead of remapping all the keys, using kanata [input chords](https://github.com/jtroo/kanata/blob/v1.7.0/docs/config.adoc#input-chords--combos-v2),
-> or use layers for some actions (like [CTRL Layer](#ctrl-layer) described above).
+> or use layers for some hold+key actions (like [Modifier layers](#modifier-layers) described above).
 
 ### Alternatives
 
