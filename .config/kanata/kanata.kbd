@@ -188,6 +188,7 @@
   y (macro S-end C-c esc) ;; yank to the end of the line
   o (multi @L_main (macro home enter up)) ;; create new line above
   n C-S-f3 ;; previous search default key in some apps
+  v (multi @L_v (macro home S-end))
   ___ XX
 )
 
@@ -249,7 +250,7 @@
 
 ;; "v" (visual) mode accessed from normal mode.
 (deflayermap (normal_mode_v_layer)
-  esc @L_norm
+  esc (multi @L_norm esc)
   ' @L_norm
   i @L_v_i
   0 S-home     ;; select to the position 0 of the line (same as vim)

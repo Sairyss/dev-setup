@@ -81,8 +81,8 @@ While in normal mode you can do things like:
 - `dd` to delete the line (and copy it)
 - `$` (`Shift+4`) and `^` (`Shift+6`) to go to the beginning/end of the line
 - `r` to replace letter under cursor
-- `y` and `p` to copy and paste (`yy` will copy the line)
-- `v` for Visual Mode (holds shift under the hood to replicate this)
+- `y` and `p` to copy and paste (`yy` will copy the line, `yiw` will copy the word)
+- `v` for Visual Mode (uses shift+key under the hood to replicate this)
 - etc.
 
 This functionality is achieved by creating macros that execute KDE's
