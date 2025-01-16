@@ -163,12 +163,14 @@ Example configs for Kanata to enable home row mods:
 2. <https://github.com/jtroo/kanata/discussions/1455>
 
 > [!WARNING]
-> Home row mods are not for everyone, fast typists will have issues like having to
-> wait a bit longer when holding a mod key for it to trigger, which can disrupt the flow,
-> or accidentally trigger modifier keys during typing.
+> Home row mods are not for everyone, fast typists can have issues like accidentally
+> triggering modifier keys during typing or experiencing slowness when pressing quick
+> one-off shortcuts (like `ctrl+c` or `ctrl+v`) since it takes a bit longer to register
+> a hold action, which disrupts the flow.
 > If that's the case for you, consider mapping only some most used key combinations
-> instead of remapping all the keys, using kanata [input chords](https://github.com/jtroo/kanata/blob/v1.7.0/docs/config.adoc#input-chords--combos-v2),
-> or use layers for some hold+key actions (like [Modifier layers](#modifier-layers) described above).
+> instead of remapping all the keys, or use kanata [input chords](https://github.com/jtroo/kanata/blob/v1.7.0/docs/config.adoc#input-chords--combos-v2),
+> or try home row mods for some hold+key actions (like [Modifier layers](#modifier-layers) described above)
+> which work pretty great in kanata thanks to [tap-hold-release](https://github.com/jtroo/kanata/blob/v1.7.0/docs/config.adoc#tap-hold) feature.
 
 ### Alternatives
 
