@@ -109,10 +109,14 @@
 )
 
 (deflayermap (main)
-  ;; w @L_win_tog
+  ret @L_ret_leader_tog
+
+  ;; -- Home row mods -- 
+  ;; left hand
   f @L_f_ctrl_tog
   d @L_d_alt_tog
-  ret @L_ret_leader_tog
+
+  ;; right hand
   ;; j @L_j_ctrl_tog
 )
 
