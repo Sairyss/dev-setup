@@ -70,6 +70,7 @@
   a_dbclient M-r    ;; DBEaver     
   a_terminal M-esc  ;; Kitty    
   a_launcher C-spc  ;; Rofi
+  a_clipboard (multi @L_norm M-v)   ;; Show clipboard history using built-in KDE tool
 
   ;; Macros
   cut_word (macro C-right S-C-left C-c del)
@@ -121,6 +122,7 @@
   e (multi @L_main @a_editor)
   d (multi @L_main @a_dbclient)
   x (multi @L_main @a_editor2)
+  p (multi @L_main @a_clipboard)
   spc (multi @L_main @a_launcher)
   / (multi @L_main @a_terminal)
   ___ XX
@@ -129,6 +131,7 @@
 (deflayermap (normal_mode)
   esc @L_main
   ' @L_main
+  ret ret
   0 home              ;; go to the beginning of the line
   i @L_main           ;; go to main layer (insert mode)
   a @L_main           ;; go to main layer (insert mode)
@@ -304,6 +307,7 @@
   v C-v
   o C-o
   i C-i
+  r C-r
   t C-t
   p C-p
   ___ XX
