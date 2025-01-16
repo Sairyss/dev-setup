@@ -51,6 +51,7 @@ other layers (same as Vim):
 - `<leader>f` - open/focus Firefox
 - `<leader>q` - open/focus email client
 - `<leader>space` - open launcher ([rofi](https://github.com/lbonn/rofi) in my case)
+- `<leader>p` - open clipboard history and go to normal mode so you can navigate using `hjkl` and paste using `p` (uses KDE clipboard by default, can be changed to anything)
 - and so on. I have all of my most frequently used apps in leader layer.
 
 Pressing `esc` or `'` exits from any layer.
