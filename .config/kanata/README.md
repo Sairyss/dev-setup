@@ -136,6 +136,7 @@ Below are some apps and plugins that support vim motions.
 - [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode) - vim mode in your terminal
 - [yazi](https://github.com/sxyazi/yazi) - file manager that supports vim motions
 - [kanata-tray](https://github.com/rszyma/kanata-tray) - kanata tray icon (can show custom icons on layer change)
+- [hints](https://github.com/AlfredoSequeida/hints) - Navigate GUIs without a mouse
 
 ## Other
 
