@@ -51,7 +51,7 @@ other layers (same as Vim):
 - `<leader>f` - open/focus Firefox
 - `<leader>q` - open/focus email client
 - `<leader>space` - open launcher ([rofi](https://github.com/lbonn/rofi) in my case)
-- `<leader>p` - open clipboard history and go to normal mode so you can navigate using `hjkl` and paste using `p` (uses KDE clipboard by default, can be changed to anything)
+- `<leader>p` - open clipboard history and go to normal mode so you can navigate using `hjkl` and paste using `p` (uses KDE clipboard by default)
 - and so on. I have all of my most frequently used apps in leader layer.
 
 Pressing `esc` or `'` exits from any layer.
@@ -78,11 +78,11 @@ While in normal mode you can do things like:
 - `hjkl` to move cursor
 - `gg` and `G` (`Shift+g`) to go to the beginning/end of the document
 - `diw` to delete a word and copy it (`ciw` to cut and go to insert mode)
-- `dd` to delete the line (and copy it)
+- `dd` to delete the line, `dg` to delete all text (and copy it)
 - `$` (`Shift+4`) and `^` (`Shift+6`) to go to the beginning/end of the line
 - `r` to replace letter under cursor
 - `y` and `p` to copy and paste (`yy` will copy the line, `yiw` will copy the word)
-- `v` for Visual Mode (uses shift+key under the hood to replicate this)
+- `v` for Visual Mode (`viw` will select the word, `vig` will select all text)
 - etc.
 
 This functionality is achieved by creating macros that execute KDE's

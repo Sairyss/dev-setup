@@ -228,6 +228,7 @@
   esc @L_norm
   ' @L_norm
   w (multi @L_norm @cut_word) ;; delete word, same as "diw" in vim
+  g (multi @L_norm (macro pgup home S-pgdn C-c del)) ;; delete entire document
   ___ XX
 )
 
@@ -245,6 +246,7 @@
   esc @L_norm
   ' @L_norm
   w (multi @L_main @cut_word) ;; cut word, same as "ciw" in vim
+  g (multi @L_main (macro pgup home S-pgdn C-c del)) ;; cut entire document
   ___ XX
 )
 
@@ -272,7 +274,8 @@
 (deflayermap (normal_mode_v_i_layer)
   esc @L_norm
   ' @L_norm
-  w (multi @L_v (macro C-right S-C-left)) ;; select word
+  w (multi @L_v (macro C-right S-C-left))   ;; select word
+  g (multi @L_v (macro pgup home S-pgdn)) ;; select entire document
   ___ XX
 )
 
