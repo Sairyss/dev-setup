@@ -38,9 +38,12 @@ For full list check the config: [kanata.kdb](./kanata.kbd)
 
 ### Leader layer
 
-`<leader>` key is mapped to `j+k` chord to toggle the layer (press `esc` to exit),
-or is toggled while holding `return`/`enter` key (I use a split keyboard so this key
-is on my right thumb, you'll have to change it to your liking).
+`<leader>` key is mapped to `j+k` chord to enter the leader layer until `esc` is pressed to exit,
+or while holding `space` or `return` keys - layer is toggled until key is released.
+
+> [!Note]
+> I use a split keyboard so these keys are on my left and right thumbs respectively,
+> which makes them comfortable to reach. You'll have to change it to your liking.
 
 Pressing/holding key assigned to `<leader>` takes you to the leader layer.
 This layer allows you to execute certain actions or move to
@@ -51,7 +54,7 @@ other layers (same as Vim):
 - `<leader>f` - open/focus Firefox
 - `<leader>t` - open/focus Terminal
 - `<leader>q` - go to previous window
-- `<leader>space` - open launcher ([rofi](https://github.com/lbonn/rofi) in my case)
+- `<leader>r` - open launcher (like [rofi](https://github.com/lbonn/rofi) or [KRunner](https://userbase.kde.org/Plasma/Krunner))
 - `<leader>p` - open clipboard history and go to normal mode so you can navigate using `hjkl` and paste using `p` (uses KDE clipboard by default)
 - and so on. I have all of my most frequently used apps in leader layer.
 
@@ -137,6 +140,7 @@ Below are some apps and plugins that support vim motions.
 - [yazi](https://github.com/sxyazi/yazi) - file manager that supports vim motions
 - [kanata-tray](https://github.com/rszyma/kanata-tray) - kanata tray icon (can show custom icons on layer change)
 - [hints](https://github.com/AlfredoSequeida/hints) - Navigate GUIs without a mouse
+- [vim-keybindings-everywhere-the-ultimate-list](https://github.com/erikw/vim-keybindings-everywhere-the-ultimate-list) - list of apps that support vim bindings
 
 ## Other
 

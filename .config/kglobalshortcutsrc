@@ -244,7 +244,7 @@ activate widget 31=none,none,Activate Application Launcher Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
-cycleNextAction=,,Next History Item
+cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
 edit_clipboard=none,none,Edit Contents…
 manage activities=none,Meta+Q,Show Activity Switcher
@@ -262,14 +262,11 @@ toggle do not disturb=none,,Toggle do not disturb
 [services][net.local.flatpak.desktop]
 _launch=Print
 
-[services][net.local.rofi.desktop]
-_launch=Ctrl+Space
-
 [services][org.kde.konsole.desktop]
 _launch=none
 
 [services][org.kde.krunner.desktop]
-_launch=Alt+Space\tSearch\tAlt+F2
+_launch=Alt+Space\tCtrl+Space\tAlt+F2\tSearch
 
 [services][org.kde.plasma-systemmonitor.desktop]
 _launch=none

@@ -17,10 +17,15 @@
       lalt spc ralt
 )
 
-(defvar
   ;; Variables
-  tap_timeout 250
-  hold_timeout 250
+(defvar
+  ;; tap-hold timeouts. adjust to your liking.
+  tap_timeout 150
+  hold_timeout 150
+
+  ;; Some keys may need slower timeouts (for example if key is further away holding it may require a slower timeout to be comfortable)
+  tap_timeout_slow 200
+  hold_timeout_slow 200
 )
 
 (defalias
@@ -29,7 +34,8 @@
 
   ;; --- Vim layers ---
   ;; toggling different layers for Vim motions
-  L_ret_leader_tog (tap-hold-release $tap_timeout $hold_timeout ret (layer-toggle leader))
+  L_ret_leader_tog (tap-hold-release $tap_timeout_slow $hold_timeout_slow ret (layer-toggle leader))
+  L_spc_leader_tog (tap-hold-release $tap_timeout $hold_timeout spc (layer-toggle leader))
   L_win_tog (tap-hold-release $tap_timeout $hold_timeout w (layer-toggle window))
   L_f_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout f (layer-toggle ctrl_homerow))
   L_j_ctrl_tog (tap-hold-release $tap_timeout $hold_timeout j (layer-toggle ctrl_homerow))
@@ -109,7 +115,10 @@
 )
 
 (deflayermap (main)
+  ;; Mapping leader toggle to "return" and "space" when key is held (goes back to main mode when key is released)
+  ;; (I use a split keyboard so "return" is on my right thumb and "space" on my left thumb so it's convenient to reach)
   ret @L_ret_leader_tog
+  spc @L_spc_leader_tog
 
   ;; -- Home row mods -- 
   ;; left hand
@@ -121,16 +130,17 @@
 )
 
 (deflayermap (leader)
-  ;; layers
   esc @L_main
   ' @L_main
   i @L_main
+
+  ;; layers
   n (multi (release-layer leader) @L_norm)
   w (multi (release-layer leader) @L_win)
-  ;; s (multi (release-layer leader) @L_search) ;; TODO: implement search layer (search for browser tabs/windows, file search, etc)
 
   ;; apps
-  r (multi @L_main @a_slack)
+  r (multi @L_main @a_launcher)
+  s (multi @L_main @a_slack)
   c (multi @L_main @a_chrome)
   f (multi @L_main @a_firefox)
   t (multi @L_main @a_terminal)
@@ -143,13 +153,21 @@
   / (multi @L_main @a_terminal)
   q (multi @L_main A-tab)       ;; go to previous window (alt-tab)
   tab (multi @L_main A-tab)     ;; go to previous window (alt-tab)
+
+  ;; add some navigation keys to the right hand side when leader layer is active
+  h left
+  l right
+  k up
+  j down
+  , (macro-repeat up)
+  m (macro-repeat down)
+
   ___ XX
 )
 
 (deflayermap (normal_mode)
   esc @L_main
   ' @L_main
-  ret ret
   0 home              ;; go to the beginning of the line
   i @L_main           ;; go to main layer (insert mode)
   a @L_main           ;; go to main layer (insert mode)
@@ -169,7 +187,9 @@
   / (multi @L_main C-f)  ;; find
 
   ;; layers
-  spc @L_leader
+  ;; spc @L_leader
+  ret @L_ret_leader_tog
+  spc @L_spc_leader_tog
   lctl @L_f_norm_ctrl_tog
   f @L_f_norm_ctrl_tog          ;; additionally mapping ctrl to "f" (easier to reach from the home row)
   lsft @L_lsft_norm_shift_tog
@@ -191,8 +211,8 @@
   esc @L_norm
   ' @L_norm
   r C-S-z ;; redo
-  u (macro-repeat up up up up up)           ;; alternative to ctrl+u in Vim
-  d (macro-repeat down down down down down) ;; alternative to ctrl+d in Vim
+  u (macro-repeat up)   ;; alternative to ctrl+u in Vim
+  d (macro-repeat down) ;; alternative to ctrl+d in Vim
   ___ XX
 )
 
