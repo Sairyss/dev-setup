@@ -69,6 +69,7 @@ Window layer lets you control window-related actions.
 - `<leader>we` switches to the previous window
 - `<leader>wd` closes the tab
 - `<leader>wt` creates a new tab
+- `<leader>wr` reopens closed tab
 - `<leader>wf` toggle maximize window
 - `<leader>wm` minimize window
 - `<leader>w(h/j/k/l)` switch windows left/below/above/right

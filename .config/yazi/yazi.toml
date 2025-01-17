@@ -14,3 +14,9 @@ prepend_previewers = [
   { mime = "{image,audio,video}/*", run = "mediainfo" },
   { mime = "application/subrip", run = "mediainfo" },
 ]
+
+[opener]
+edit = [
+  { run = '/home/linuxbrew/.linuxbrew/bin/nvim "$@"', block = true, for = "unix" },
+  { run = "%EDITOR% %*", block = true, for = "windows" },
+]
