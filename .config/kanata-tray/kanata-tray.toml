@@ -15,21 +15,8 @@ tcp_port = 5829                                             # if not specified, 
 # Documentation: https://github.com/rszyma/kanata-tray/blob/main/doc/hooks.md
 
 [defaults.layer_icons]
-normal_mode = 'vim_logo.png'
-leader = 'vim_logo.png'
-window = 'vim_logo.png'
-apps = 'vim_logo.png'
-normal_mode_shift_layer = 'vim_logo.png'
-normal_mode_ctrl_layer = 'vim_logo.png'
-normal_mode_g_layer = 'vim_logo.png'
-normal_mode_v_layer = 'vim_logo.png'
-normal_mode_v_i_layer = 'vim_logo.png'
-normal_mode_d_layer = 'vim_logo.png'
-normal_mode_d_i_layer = 'vim_logo.png'
-normal_mode_d_shift_layer = 'vim_logo.png'
-normal_mode_y_layer = 'vim_logo.png'
-normal_mode_y_i_layer = 'vim_logo.png'
-normal_mode_replace_single_letter_layer = 'vim_logo.png'
+main = 'keyboard.png'
+'*' = 'arrow.png'
 
 [presets.'main cfg']
 kanata_config = '~/.config/kanata/kanata.kbd'
